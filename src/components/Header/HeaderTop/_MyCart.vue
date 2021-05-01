@@ -167,4 +167,14 @@ export default {
     animation-fill-mode: both;
   }
 }
+
+.fixed-header{
+.cart-products-count{
+    position: relative !important;
+    top: 0 !important;
+    right: 0px;
+    left: -21px !important;
+  }
+}
+
 </style>

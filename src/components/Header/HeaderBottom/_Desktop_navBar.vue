@@ -2,7 +2,7 @@
     <div class="contentsticky_menu _descTop_navBar">
         <nav class="nov-megamenu_default clearfix">
             <div class="nov-megamenu clearfix">
-                <ul class="menu level1">
+                <ul class="menu level1 nav justify-content-center">
                     <li class="item  active">
                         <router-link to="/" title="Home">Home</router-link>
                     </li>
@@ -297,7 +297,7 @@ export default {
                             }
                             a{
                                 &:hover {
-                                    color: $Grn;
+                                    color: $Grn !important;
                                 }
                             }
                         }
@@ -315,6 +315,11 @@ export default {
                                 opacity: 1;
                                 visibility: visible;
                                 display: block;
+                            }
+                            > a{
+                                // &:hover {
+                                    color: $Grn !important;
+                                // }
                             }
                         }
 
@@ -350,5 +355,29 @@ export default {
                 }
             }
         }
+    }
+
+    // * START FIXED HEADER STYLE * //
+
+    .fixed-header ._descTop_navBar .nov-megamenu_default .nov-megamenu .menu 
+    {
+        > li{
+            &:hover{
+                > a{
+                    color: $Grn !important;
+                }
+            }
+            
+            &.group > .dropdown-menu{
+                margin-top: -10px;
+            }
+        }
+        .item a{
+            color: #666 !important;
+            &:hover{
+                color: $Grn !important;
+            }
+        }
+        
     }
 </style>

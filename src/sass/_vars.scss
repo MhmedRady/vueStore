@@ -48,8 +48,6 @@
 
   /* ########## END MEDIA QUERY ########## */
 
-
-
   /* ########## START MIXINs FUNCTIONS ########## */
 
     @mixin transform ($m: none) {
@@ -59,15 +57,14 @@
       -o-transform: $m !important;
       transform: $m !important; 
     }
-    @mixin transition ($s: 0.5) {
-      -webkit-transition: all $s+s ease-in-out !important;
-      -moz-transition: all $s+s ease-in-out !important;
-      -ms-transition: all $s+s ease-in-out !important;
-      -o-transition: all $s+s ease-in-out !important;
-      transition: all $s+s ease-in-out !important; 
+    @mixin transition ($s: 0.5,$move: ease-in-out) {
+      -webkit-transition: all $s+s $move !important;
+      -moz-transition: all $s+s $move !important;
+      -ms-transition: all $s+s $move !important;
+      -o-transition: all $s+s $move !important;
+      transition: all $s+s $move !important; 
     }
     @mixin opacity ($p: 1) {
-      
       -webkit-opacity: $p !important;
       -moz-opacity: $p !important;
       -ms-opacity: $p !important;
@@ -126,9 +123,9 @@
   /* ########## START PLACE HOLDERS ########## */
   %queryCONTAINER {
     @media screen and (min-width: $minWidth) {
-          width: 1800px !important;
-          max-width: 100% !important;
-      }
+        width: 1800px !important;
+        max-width: 100% !important;
+    }
   }
   %maxMobile{
     @media screen and (max-width: 767px){

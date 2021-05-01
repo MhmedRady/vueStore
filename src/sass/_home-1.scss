@@ -1,0 +1,60 @@
+@import '_vars';
+  .home-1-edit{
+    .banner-top-left{
+        padding-right: 7.5px;
+    }
+    .banner-top-right{
+        padding-left: 7.5px;
+    }
+    .carouselTop{
+        ._topSlider{
+            .carousel-item{
+                .carousel-caption{
+                    position: absolute;
+                    right: 15%;
+                    bottom: 20px;
+                    left: 5%;
+                    z-index: 10;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    color: #fff;
+                    text-align: center;
+                    top: 50px;
+                    width: 270px;
+                    text-align: $textAlign;
+                    overflow: hidden;
+                    &.rightCaption{
+                        left: 60%;
+                        width: 250px;
+                    }
+                }
+                &.c2{
+                    .carousel-caption{
+                        left: 60% !important;
+                        @media screen and(max-width: $maxMobile) {
+                            left: 50% !important;
+                        }
+                    }
+                }
+                @media screen and (max-width: $maxMobile) {
+                    .carousel-caption{
+                        top: 20px;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// position: absolute;
+// right: 15%;
+// bottom: 20px;
+// z-index: 10;
+// padding-top: 20px;
+// padding-bottom: 20px;
+// color: #fff;
+// text-align: center;
+// top: 30px;
+// width: 270px;
+// left: 5%;

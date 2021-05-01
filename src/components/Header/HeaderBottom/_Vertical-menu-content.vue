@@ -408,6 +408,7 @@
             margin: 0 auto;
             margin-right: 10px;
             top: 0px;
+            margin-left: 15px;
           }
         }
         span{

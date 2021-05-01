@@ -16,6 +16,7 @@ import MobilePageMenu from '@/components/Widgets/_mobile_Page_Menu.vue';
 import sideMenu from '@/components/Widgets/_side_menu';
 import canvasOverlay from '@/components/Widgets/_canvas_Overlay.vue';
 export default {
+    name: "Widgets",
     components: {
         NavBottomMobile,
         LoginRegist,

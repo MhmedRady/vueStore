@@ -6,7 +6,7 @@
       <head-Top />
       <header-bottom />
     </div>
-    
+    <fixed-Header />
     <!-- /* ** START MOBALIE HEADER *** */ -->
 
       <header-mobile />
@@ -19,6 +19,8 @@ import alertTop from "@/components/Header/AlertComp.vue";
 import topBar from "@/components/Header/topBar.vue";
 import HeadTop from "@/components/Header/HeaderTop.vue";
 import HeaderBottom from "@/components/Header/HeaderBottom.vue";
+import FixedHeader from "@/components/Header/FixedHeader.vue";
+
 import HeaderMobile from '@/components/Header/HeaderMobaile.vue';
 export default {
   name: "HeaderBar",
@@ -27,6 +29,7 @@ export default {
     topBar,
     HeadTop,
     HeaderBottom,
+    FixedHeader,
 
     HeaderMobile,
   },
@@ -39,6 +42,7 @@ export default {
   @media screen and(max-width: $maxMobile) {
       position: fixed !important;
       z-index: $headerZ;
+      top: 0;
     }
   width: 100%;
   ._deskTop_header{

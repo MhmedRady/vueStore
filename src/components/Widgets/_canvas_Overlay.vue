@@ -2,6 +2,8 @@
         <div class="canvas-overlay" @click="closeSideMenu"></div>
 </template>
 
+
+
 <script>
 import $ from 'jquery';
 export default {

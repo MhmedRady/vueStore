@@ -1,0 +1,7 @@
+[
+    {"id":1,"h":"iPhone 12 pro","from":"","img":"slide-marke1.jpg","desc":"Say hello to the future ","buy":""},
+    {"id":2,"h":"QLED 8K","from":"From $550","img":"slide-marke2.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.","buy":"Buy Now"},
+    {"id":3,"h":"MacBook Pro ","from":"From $1000","img":"slide-marke3.jpg","desc":"notebooks featuring fast processors, incredible graphics, Touch Bar, and a spectacular Retina display.","buy":"Buy Now"},
+    {"id":4,"h":"Digital Cameras ","from":"","img":"slide-marke4.jpg","desc":"digital camera is a camera that captures photographs in digital memory. Most cameras produced today are digital.","buy":""},
+    {"id":5,"h":"Monitor 4k ","from":"From $550","img":"slide-marke5.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.","buy":""}
+]

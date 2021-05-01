@@ -3,29 +3,19 @@ import bodyContent from "./contents/bodyContent.vue";
 import widgets from "./contents/Widgets.vue";
 import router from "./router";
 import store from "./store";
-
-import "normalize.css";
-
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import { BCarousel } from 'bootstrap-vue'
 
-// Import Bootstrap an BootstrapVue CSS files (order is important)
-import "bootstrap/dist/css/bootstrap.css";
+import './importPkgs.js'
 
-import "bootstrap-vue/dist/bootstrap-vue.css";
-
-import "popper.js";
-import "bootstrap/dist/js/bootstrap.js";
-
-// import "../src/layout/css/font-awesome.min.css";
-import "./layout/css/font-awesome.min.css";
-import "../src/layout/css/material-icons.css";
-
-
+// import * as globalFun from "./layout/js/helper.js";
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin);
+Vue.component('b-carousel', BCarousel)
+// Vue.use(globalFun);
 
 Vue.config.productionTip = false;
 

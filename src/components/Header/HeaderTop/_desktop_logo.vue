@@ -1,12 +1,12 @@
 <template>
   <div class="_logo col-md-2">
-    <a href="#">
-      <img
-        class="logo img-fluid"
-        src="../../../assets/images/logo-1.png"
-        :alt="atr"
-      />
-    </a>
+    <router-link to="/" title="Home">
+        <img
+          class="logo img-fluid"
+          src="../../../assets/images/logo-1.png"
+          :alt="atr"
+        />
+    </router-link>
   </div>
 </template>
 
