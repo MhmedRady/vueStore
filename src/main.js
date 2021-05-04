@@ -3,10 +3,14 @@ import bodyContent from "./contents/bodyContent.vue";
 import widgets from "./contents/Widgets.vue";
 import router from "./router";
 import store from "./store";
+
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import { BCarousel } from 'bootstrap-vue'
 
+import VueSlickCarousel from 'vue-slick-carousel'
+
 import './importPkgs.js'
+
 
 // import * as globalFun from "./layout/js/helper.js";
 
@@ -15,7 +19,9 @@ Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin);
 Vue.component('b-carousel', BCarousel)
-// Vue.use(globalFun);
+
+
+Vue.component('SlickCarousel', VueSlickCarousel)
 
 Vue.config.productionTip = false;
 

@@ -1,9 +1,58 @@
 @import './vars';
-
+#body{
+    @media screen and(max-width: $maxMobile) {
+        > section{
+            padding-top: 50px;
+            padding-bottom: 80px;
+        }
+    }
+}
 @media screen and(min-width: $maxIpad) {
     .maxIpad{
         display: none;
     }
+}
+.d-ruby{
+    display: ruby !important;
+}
+.n-b{
+    border: none !important;
+}
+.h-100{
+    height: 100%;
+}
+.w-100{
+    height: 100%;
+}
+.p-0{
+    padding: 0 !important;
+}
+.p-5{
+    padding: 5px !important;
+}
+.p-10{
+    padding: 10px !important;
+}
+.p-15{
+    padding: 15px !important;
+}
+.p-20{
+    padding: 20px !important;
+}
+.pt-15 {
+    padding-top: 15px !important;
+}
+.pb-15 {
+    padding-bottom: 15px !important;
+}
+.pt-0 {
+    padding-top: 0 !important;
+}
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+.pr-6 {
+    padding-right: 6px !important;
 }
 .pr-15 {
     padding-right: 15px !important;
@@ -11,21 +60,55 @@
 .pl-15 {
     padding-left: 15px !important;
 }
+.pr-20 {
+    padding-right: 20px !important;
+}
+.pl-20 {
+    padding-left: 20px !important;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-10{
+    margin-top: 10px !important;
+}
+.mt-11{
+    margin-top: 11px !important;
+}
 .mt-15 {
     margin-top: 15px !important;
 }
 .mr-15{
     margin-right: 15px !important;
 }
+.mb-11{
+    margin-bottom: 11px !important;
+}
 .mb-15{
     margin-bottom: 15px !important;
+}
+.mb-20{
+    margin-bottom: 20px !important;
 }
 .vc_row{
     transition: opacity 0.5s ease 0s;
 }
+
+.flex-column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
 /*** WP_ ***/
 .wpb_row {
     clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
     .wpb_row {
         clear: none;
     }
@@ -33,6 +116,15 @@
 .vc_row {
     margin-left: -15px;
     margin-right: -15px;
+}
+.vc_row.spacing-20, 
+.row.spacing-20 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.product-miniature {
+    position: relative;
+    overflow: hidden;
 }
 @media screen and(min-width: $minWidth) {
     .vc_col-lg-1, 
@@ -208,7 +300,7 @@
             margin-bottom: 20px;
             margin-left: 20px;
         display: inline-block;
-        text-align: $textAlign;
+        
         vertical-align: middle;
         -webkit-transform: translate(0,0);
         -ms-transform: translate(0,0);
@@ -341,4 +433,19 @@
 
 .custom_heading h2 {
     margin-bottom: 0;
+}
+
+.image-cover,
+.image-back{
+    max-height: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80px;
+    border: none;
+        
+    
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+    transition: all 400ms ease-in-out 0s;
 }

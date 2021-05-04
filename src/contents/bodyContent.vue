@@ -57,10 +57,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   font-family: Oxy;
-  @media screen and(max-width: $maxMobile) {
-    > section{
-      padding-top: 50px;
-    }
+  
+  .image-cover,
+  .image-back{
+    background-image: url("../assets/svg/loading.gif");
   }
 }
 
