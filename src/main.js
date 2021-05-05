@@ -7,6 +7,8 @@ import store from "./store";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import { BCarousel } from 'bootstrap-vue'
 
+import VueOwlCarousel from 'vue-owl-carousel'
+
 import VueSlickCarousel from 'vue-slick-carousel'
 
 import './importPkgs.js'
@@ -20,7 +22,7 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.component('b-carousel', BCarousel)
 
-
+Vue.component('OwlCarousel',VueOwlCarousel);
 Vue.component('SlickCarousel', VueSlickCarousel)
 
 Vue.config.productionTip = false;

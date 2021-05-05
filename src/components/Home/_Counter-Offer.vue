@@ -118,7 +118,7 @@ export default {
             }
             .data-time{
                 color: $f;
-                font-size: 11px;
+                font-size: .8rem;
                 font-family: Pop;
                 border-radius: 3px;
                 background-color: #ff8d31;

@@ -170,4 +170,15 @@
     }
 // }
 
+
+.flashSale {
+    .slick-container {
+        > div {
+            >span{
+                display: none;
+            }
+        }
+    }
+}
+
  

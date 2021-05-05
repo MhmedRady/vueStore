@@ -16,3 +16,4 @@ import "./layout/css/material-icons.css";
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+

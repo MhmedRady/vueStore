@@ -3,7 +3,30 @@
         <div class="nov-productdeals type-slider-1 mt-11 mb-11">
             <div class="block-product clearfix">
                 <div class="block_content">
-                    <SlickCarousel 
+                    
+                        <div class="slick-container">
+                            <!-- <div class="row flex-nowrap"> -->
+                                <OwlCarousel
+                                :dots="false"
+                                :nav="false"
+                                :autoWidth="true"
+                                >
+                                <slick-item v-for="slickItem in slickItems" :key="slickItem.id"
+                                    :Title="slickItem.title"
+                                    :img1="slickItem.img_1"
+                                    :img2="slickItem.img_2"
+                                    :stock="slickItem.tag_stock"
+                                    :cost="slickItem.price"
+                                    :sale="slickItem.sale"
+                                    :vendor="slickItem.vendor"
+                                    :date="slickItem.date" 
+                                    :iId="slickItem.id"/>
+                                    </OwlCarousel>
+                            <!-- </div> -->
+                        </div>        
+                            
+                    
+                    <!-- <SlickCarousel 
                     :arrows="false" 
                     :dots="false"
                     :swipeToSlide="true"
@@ -29,7 +52,7 @@
                                 
                             </div>
                         </div>
-                    </SlickCarousel>
+                    </SlickCarousel> -->
                 </div>
             </div>
         </div>
