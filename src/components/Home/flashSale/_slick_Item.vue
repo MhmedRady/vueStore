@@ -78,7 +78,9 @@
                                             {{vendor}}
                                         </span>
                                     </a>
+                                    <product-Rarting :rate="rate" :iId="iId"/>
                                 </div>
+                                
                             </em>
                         </template>
                     </b-card>
@@ -90,11 +92,12 @@
 
 <script>
 import countdownOffer from '@/components/Home/_Counter-Offer'
+import productRarting from '@/components/Home/_Product-Rate'
 
 export default {
-    props: ["Title","img1","img2","stock","cost","sale","vendor","date","iId"],
+    props: ["Title","img1","img2","stock","cost","sale","vendor","rate","date","iId"],
     
-    components:{countdownOffer}
+    components:{countdownOffer, productRarting}
 }
 
 </script>

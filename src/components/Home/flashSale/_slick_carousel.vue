@@ -19,6 +19,7 @@
                                     :cost="slickItem.price"
                                     :sale="slickItem.sale"
                                     :vendor="slickItem.vendor"
+                                    :rate="slickItem.rate"
                                     :date="slickItem.date" 
                                     :iId="slickItem.id"/>
                                     </OwlCarousel>
