@@ -17,3 +17,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
+// import 'vue-a/dist/aos.css'
+import 'vue-aos/dist/VueAos.umd.min.js'
+
+import 'aos/dist/aos.css'
