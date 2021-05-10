@@ -91,8 +91,8 @@
       -ms-filter: $filter !important;
       filter: $filter !important; 
     }
-    @mixin fontSize($size : 0.8) {
-      font-size: $size+rem !important;
+    @mixin fontSize($size : 0.8,$unt: rem) {
+      font-size: $size+$unt !important;
     }
     @mixin MIcon($icon,$fz:1) {
       font-family: "Material Icons";
@@ -102,7 +102,9 @@
       position: relative;
       display: inherit;
     }
-    
+    @mixin f-F($font:Pop) {
+      font-family: $font !important;
+    }
   /* ########## END MIXINs FUNCTIONS ########## */
 
   /* ########## START IMAEGES AND ICONS ########## */

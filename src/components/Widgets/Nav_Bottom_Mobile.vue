@@ -23,14 +23,7 @@
             </div>
 
             <div class="stickymenu-item col">
-                <div id="_mobile_back_top">
-                    <div id="back-top">
-                        <span>
-                            <i class="fa fa-arrow-circle-up move-top"></i>
-                        </span>
-                        <span class="text">On Top</span>
-                    </div>
-                </div>
+                <back-Top />
             </div>
         </div>
     </div>
@@ -40,11 +33,13 @@
 // import Wish from '@/components/Widgets/Nav_Bottom/_Wish.vue';
 import BottomCart from '@/components/Widgets/Nav_Bottom/_Bottom_Cart.vue';
 
+import backTop from '@/components/Widgets/Nav_Bottom/_Back_Top.vue';
+
 export default {
     name: "BottomNavBar",
     components: {
-        // Wish,
-        BottomCart
+        BottomCart,
+        backTop
     },
     created (){
         console.log("created");
@@ -118,23 +113,16 @@ export default {
                 height: 18px;
                 background-size: contain;
                 margin-bottom: 5px;
-                background-image: url(../../../assets/svg/nav/home.png);
+                background-image: url(../../assets/svg/nav/home.png);
             }
             .icon-settings{
                 width: 17px;
                 height: 17px;
                 background-size: contain;
                 margin-bottom: 6px;
-                background-image: url(../../../assets/svg/nav/gear.png);
+                background-image: url(../../assets/svg/nav/gear.png);
             }
-            #back-top{
-                cursor: pointer;
-                .move-top{
-                    position: relative;
-                    top: -5px;
-                    @include fontSize(1.3);
-                }
-            }
+            
             
             span {
                 display: block !important;

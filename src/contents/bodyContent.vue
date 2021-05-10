@@ -15,6 +15,7 @@
 
 <script>
 // import $ from 'jquery'
+
 import HeaderBar from "@/components/Header/Header.vue";
 // import Widgets from './Widgets.vue';
 

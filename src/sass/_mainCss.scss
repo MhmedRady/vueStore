@@ -24,72 +24,42 @@
 .w-100{
     height: 100%;
 }
-.p-0{
-    padding: 0 !important;
+
+@for $var from 0 through 40 {
+    .p-#{$var}{
+        padding: $var+px !important;
+    }
+    .pt-#{$var}{
+        padding-top: $var+px !important;
+    }
+    .pb-#{$var}{
+        padding-bottom: $var+px !important;
+    }
+    .pr-#{$var}{
+        padding-right: $var+px !important;
+    }
+    .pl-#{$var}{
+        padding-left: $var+px !important;
+    }
+
+    .m-#{$var}{
+        margin: $var+px !important;
+    }
+    .mt-#{$var}{
+        margin-top: $var+px !important;
+    }
+    .mb-#{$var}{
+        margin-bottom: $var+px !important;
+    }
+    .mr-#{$var}{
+        margin-right: $var+px !important;
+    }
+    .ml-#{$var}{
+        margin-left: $var+px !important;
+    }
+
 }
-.p-5{
-    padding: 5px !important;
-}
-.p-10{
-    padding: 10px !important;
-}
-.p-15{
-    padding: 15px !important;
-}
-.p-20{
-    padding: 20px !important;
-}
-.pt-15 {
-    padding-top: 15px !important;
-}
-.pb-15 {
-    padding-bottom: 15px !important;
-}
-.pt-0 {
-    padding-top: 0 !important;
-}
-.pb-0 {
-    padding-bottom: 0 !important;
-}
-.pr-6 {
-    padding-right: 6px !important;
-}
-.pr-15 {
-    padding-right: 15px !important;
-}
-.pl-15 {
-    padding-left: 15px !important;
-}
-.pr-20 {
-    padding-right: 20px !important;
-}
-.pl-20 {
-    padding-left: 20px !important;
-}
-.mt-8{
-    margin-top: 8px !important;
-}
-.mt-10{
-    margin-top: 10px !important;
-}
-.mt-11{
-    margin-top: 11px !important;
-}
-.mt-15 {
-    margin-top: 15px !important;
-}
-.mr-15{
-    margin-right: 15px !important;
-}
-.mb-11{
-    margin-bottom: 11px !important;
-}
-.mb-15{
-    margin-bottom: 15px !important;
-}
-.mb-20{
-    margin-bottom: 20px !important;
-}
+
 .vc_row{
     transition: opacity 0.5s ease 0s;
 }
@@ -100,6 +70,19 @@
     -webkit-flex-direction: column !important;
     -ms-flex-direction: column !important;
     flex-direction: column !important;
+}
+
+.pos-r{
+    position: relative !important;
+}
+.pos-a{
+    position: absolute !important;
+}
+.pos-f{
+    position: fixed !important;
+}
+.pos-s{
+    position: static !important;
 }
 
 /*** WP_ ***/
@@ -121,6 +104,11 @@
 .row.spacing-20 {
     margin-left: -10px;
     margin-right: -10px;
+}
+.vc_row.spacing-10,
+.row.spacing-10 {
+    margin-left: -5px;
+    margin-right: -5px;
 }
 .product-miniature {
     position: relative;
@@ -443,9 +431,20 @@
     background-size: 80px;
     border: none;
         
-    
     filter: alpha(opacity=100);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
     transition: all 400ms ease-in-out 0s;
+}
+.disabled{
+    @include opacity(.3);
+}
+
+.vc_custom{
+    background-color: $liBorder !important;
+}
+
+.vc_column-inner{
+    height: 100%;
+    width: 100%;
 }

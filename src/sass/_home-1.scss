@@ -4,7 +4,9 @@
         padding-right: 7.5px;
     }
     .banner-top-right{
-        padding-left: 7.5px;
+        @media screen and(min-width: $maxMobile) {
+            padding-left: 7.5px;
+        }
     }
     .carouselTop{
         ._topSlider{

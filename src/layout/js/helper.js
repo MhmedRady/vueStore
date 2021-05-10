@@ -13,7 +13,27 @@ var helperFun = {
     getEl : function () {
         console.log("element");
     },
+    
+    goTop: function(){
+        console.log("goTop");
+        $('html, body').animate({scrollTop:0},1000);
+    },
 
+    gotTopScroll: ()=>{
+        var sTop = $(window).scrollTop();
+            
+        var v = document.getElementsByClassName("go-back-top")[0];
+        // console.log(v);
+        if (sTop <500) {
+            v.setAttribute("disabled","");
+            v.classList.add("disabled");
+        }else{
+            v.removeAttribute("disabled","");
+            v.classList.remove("disabled");
+        }
+        
+    },
+    
     timers :  (date,id) => {
         // console.log("m param => "+m);
         // Set the date we're counting down to
