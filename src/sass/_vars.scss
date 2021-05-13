@@ -5,6 +5,10 @@
 
   $textAlign: left;
   $textRight: right;
+  
+  $left:left;
+  $right:right;
+
   $b: #000;
   $f: #FFF;
   $WB: #4449;
@@ -18,6 +22,8 @@
 
   $Orenge:#FFA800;
   $rate: #f7bc3d;
+  $w_red:#eb4f19;
+  $discount: #e85b40;
 
   $subColor: #acacac;
 
@@ -67,12 +73,12 @@
       -o-transition: all $s+s $move !important;
       transition: all $s+s $move !important; 
     }
-    @mixin opacity ($p: 1) {
-      -webkit-opacity: $p !important;
-      -moz-opacity: $p !important;
-      -ms-opacity: $p !important;
-      -o-opacity: $p !important;
-      opacity: $p !important; 
+    @mixin opacity ($p: 1,$i:0) {
+      -webkit-opacity: $p if($i==0,!important,());
+      -moz-opacity: $p if($i==0,!important,());
+      -ms-opacity: $p if($i==0,!important,());
+      -o-opacity: $p if($i==0,!important,());
+      opacity: $p if($i==0,!important, ()); 
     }
     @mixin opacityTrans($s:.5) {
       -webkit-transition: opacity $s+s linear;
@@ -95,7 +101,15 @@
       font-size: $size+$unt !important;
     }
     @mixin MIcon($icon,$fz:1) {
-      font-family: "Material Icons";
+      font-family: MaterialIcons;
+      content: "\f1cc";
+      @include fontSize($fz);
+      text-rendering: auto;
+      position: relative;
+      display: inherit;
+    }
+    @mixin FAIcon($icon,$fz:1) {
+      font-family: normal normal normal 14px/1 FontAwesome;
       content: $icon;
       @include fontSize($fz);
       text-rendering: auto;
@@ -104,6 +118,18 @@
     }
     @mixin f-F($font:Pop) {
       font-family: $font !important;
+    }
+    @mixin BShadow ($s: none) {
+      -webkit-box-shadow: $s;
+      -moz-box-shadow: $s;
+      -ms-box-shadow: $s;
+      -o-box-shadow: $s;
+      box-shadow: $s; 
+    }
+    @mixin returnC() {
+      @include transform();
+        visibility: visible;
+        opacity: 1;
     }
   /* ########## END MIXINs FUNCTIONS ########## */
 

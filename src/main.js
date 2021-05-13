@@ -11,11 +11,11 @@ import VueOwlCarousel from 'vue-owl-carousel'
 
 import VueSlickCarousel from 'vue-slick-carousel'
 
+// import VueLazyload from 'vue-lazyload'
+
 import AOS from 'aos'
 
 import './importPkgs.js'
-
-
 
 // import * as globalFun from "./layout/js/helper.js";
 
@@ -27,8 +27,6 @@ Vue.component('b-carousel', BCarousel)
 
 Vue.component('OwlCarousel',VueOwlCarousel);
 Vue.component('SlickCarousel', VueSlickCarousel)
-
-// Vue.use(AOS)
 
 Vue.config.productionTip = false;
 

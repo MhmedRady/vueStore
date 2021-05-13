@@ -6,8 +6,8 @@
                     
                         <div class="slick-container">
                             <!-- <div class="row flex-nowrap"> -->
-                                <OwlCarousel
-                                :dots="false"
+                            <OwlCarousel
+                                :dots="true"
                                 :nav="false"
                                 :autoWidth="true"
                                 >
@@ -22,7 +22,7 @@
                                     :rate="slickItem.rate"
                                     :date="slickItem.date" 
                                     :iId="slickItem.id"/>
-                                    </OwlCarousel>
+                            </OwlCarousel>
                             <!-- </div> -->
                         </div>        
                             

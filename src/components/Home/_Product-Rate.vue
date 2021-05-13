@@ -16,7 +16,7 @@
     .nov-productdeals
     {
         .product-rate{
-            padding-left: 20px;
+            padding-left: 15px;
             margin-bottom: 0;
             margin-top: 0;
             margin-left: auto;
@@ -41,7 +41,7 @@
                         font-family: "FontAwesome";
                         display: inline-block;
                         left: 0;
-                        font-size: 15px;
+                        font-size: 12px;
                         font-weight: bolder;
                         // text-shadow: 0 0px 2px;
                     }

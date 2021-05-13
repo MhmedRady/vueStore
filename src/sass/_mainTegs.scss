@@ -36,3 +36,10 @@ p{
 img{
   background-color: #fff;
 }
+.dataList{
+  .owl-dots{
+    @media screen and (min-width: $maxMobile) {
+        display: none !important;
+    }
+  }
+}

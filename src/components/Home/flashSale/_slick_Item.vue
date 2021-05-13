@@ -1,14 +1,14 @@
 <template>
-    <div class="container">
-        <div class="row flex-nowrap">
+    <div class="slick-container">
+        <div class="raw flex-nowrap">
             <div class="col-12 pr-0 item">
                 <div class="item stick-item">
                     <b-card no-body class="overflow-hidden" style="max-width: 540px;">
                         <b-row no-gutters>
                         <b-col md="6" class="thumbnail-container">
                             <a href="#" class="thumbnail product-thumbnail two-image">
-                                <b-card-img :src="require(`../../../assets/images/flash-sale/${img1}`)" alt="Image" class="rounded-0 p-20 img-fluid image-cover"></b-card-img>
-                                <b-card-img :src="require(`../../../assets/images/flash-sale/${img2}`)" alt="Image" class="rounded-0 p-20 img-fluid image-secondary image-back"></b-card-img>
+                                <b-card-img :src="require(`../../../assets/images/flash-sale/${img1}`)" :alt="Title" class="rounded-0 p-20 img-fluid image-cover"></b-card-img>
+                                <b-card-img :src="require(`../../../assets/images/flash-sale/${img2}`)" :alt="Title" class="rounded-0 p-20 img-fluid image-secondary image-back"></b-card-img>
                             </a>
                         </b-col>
                         <b-col md="6">
@@ -102,7 +102,7 @@ export default {
 
 </script>
 
-<style lang="scss" scope>
+<style lang="scss">
     .item{
         .stick-item{
             @media screen and(min-width: $maxMobile) {
