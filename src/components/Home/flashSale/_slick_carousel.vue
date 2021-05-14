@@ -62,7 +62,7 @@
 
 <script>
 import slickItem from '@/components/Home/flashSale/_slick_Item'
-import slickItemJson from '../../../assets/models/flashSale.json'
+import slickItemJson from '../../../assets/models/flashSale/flashSale.json'
 export default {
     data() {
         return {
@@ -72,3 +72,5 @@ export default {
     components:{slickItem}
 }
 </script>
+
+

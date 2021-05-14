@@ -7,15 +7,19 @@
                         <div class="d-flex align-items-center d-xs-block block_nav">
 										
                             <ul class="nav nav-tabs" role="tablist">
+                                
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active" role="tab" data-toggle="tab" aria-selected="true">New Arrivals</a>
+                                    <a href="#New-tab" class="nav-link active" role="tab" data-toggle="tab" aria-controls="New-tab" aria-selected="true">New Arrivals</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link" role="tab" data-toggle="tab" aria-selected="false">Bestseller</a>
+                                    <a href="#Best-tab" class="nav-link" role="tab" data-toggle="tab" aria-controls="Best-tab" aria-selected="false">Bestseller</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link" role="tab" data-toggle="tab" aria-selected="false">On Sale</a>
+                                    <a href="#noSale-tab" class="nav-link" role="tab" data-toggle="tab" aria-controls="noSale-tab" aria-selected="false">On Sale</a>
                                 </li>
+
                             </ul>
                             
                         </div>
@@ -65,6 +69,9 @@ export default {
                         &:not(:last-child) {
                             margin-right: 10px;
                         }
+                        @media screen and(max-width: $maxMobile) {
+                            margin-bottom: 15px;
+                        }
                         a{
                             border: none;
                             background: #e0e0e0;
@@ -78,6 +85,7 @@ export default {
                             text-align: center;
                             font-size: .7rem;
                             font-weight: 700;
+                            @include f-F(OxyB);
                             text-transform: uppercase;
                             -webkit-transition: all 0.2s linear;
                             -moz-transition: all 0.2s linear;
@@ -85,6 +93,10 @@ export default {
                             -o-transition: all 0.2s linear;
                             transition: all 0.2s linear;
                             margin-bottom: 2px;
+                            @media screen and(max-width: $maxMobile) {
+                                border-radius: 5px;
+                                box-shadow: 4px 2px 5px 1px #2225;
+                            }
                             &.active,&:hover{
                                 background: $HeaderBar_Co;
                                 color: $f;
@@ -92,6 +104,7 @@ export default {
                                 line-height: 50px;
                                 margin-bottom: 0;
                             }
+                            
                         }
                     }
 

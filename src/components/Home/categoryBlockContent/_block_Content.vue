@@ -1,8 +1,8 @@
 <template>
-    <div class="row wpb_row row-fluid  pt-40 pb-36 mb-0 ">
+    <div class="row wpb_row row-fluid pt-40 pb-36 mb-0 ">
         
         <div data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
-            class="col-sm-6 col-xl-3 col-lg-6 col-md-6 mb-30 wpb_column column_container">
+            class="col-sm-12 col-xl-3 col-lg-6 col-md-6 mb-30 wpb_column column_container">
             <div class="vc_column-inner vc_custom">
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
@@ -54,7 +54,7 @@
         </div>
         
         <div data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
-            class="col-sm-6 col-xl-3 col-lg-6 col-md-6 mb-31 wpb_column column_container">
+            class="col-sm-12 col-xl-3 col-lg-6 col-md-6 mb-31 wpb_column column_container">
             <div class="vc_column-inner vc_custom">
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
@@ -89,7 +89,7 @@
         </div>
 
         <div data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
-         class="col-sm-6 col-xl-3 col-lg-6 col-md-6 mb-31 wpb_column column_container">
+         class="col-sm-12 col-xl-3 col-lg-6 col-md-6 mb-31 wpb_column column_container">
             <div class="vc_column-inner vc_custom">
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
@@ -126,7 +126,7 @@
         </div>
         
         <div data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
-         class="col-sm-6 col-xl-3 col-lg-6 col-md-6 mb-30 wpb_column column_container">
+         class="col-sm-12 col-xl-3 col-lg-6 col-md-6 mb-30 wpb_column column_container">
             <div class="vc_column-inner vc_custom">
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
@@ -218,6 +218,9 @@ export default {
             }
             .item{
                 overflow: hidden;
+                @media screen and(max-width: $maxMobile_Rot) and(max-width: $minMobile_Rot) {
+                    
+                }
                 span{
                     width: 100%;
                 }

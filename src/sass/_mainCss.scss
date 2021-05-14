@@ -491,3 +491,9 @@
 [id*="carousel_next_"]{
     display: none;
 }
+[class*="mob-"]{
+    display: none;
+    @media screen and(max-width: $maxMobile) {
+        display: block !important;
+    }
+}

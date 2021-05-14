@@ -9,32 +9,34 @@
                         <b-card class="rounded-0 p-0" img-top>
 
                             <a href="#" class="two-image">
-                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/suspeised-eleifend-velitee.jpg`)" class="xh-n rounded-0 p-5 img-fluid image-cover"></b-card-img-lazy>
-                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/_suspeised-eleifend-velitee.jpg`)" class="xh-n rounded-0 p-5 img-fluid image-secondary image-cover"></b-card-img-lazy>
-                                <span class="product-flags discount">-20%</span>
-                                <span class="product-flags new">New</span>
+                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_1}`)" class="xh-n rounded-0 p-5 img-fluid image-cover"></b-card-img-lazy>
+                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_2}`)" class="xh-n rounded-0 p-5 img-fluid image-secondary image-cover"></b-card-img-lazy>
+                                <span v-if="sale !='0'" class="product-flags discount">{{sale}}</span>
+                                <span v-if="_new" class="product-flags new">New</span>
                                 <div class="button-top">
                                     <a href="#" class="addToWishlist">
                                         <i class="material-icons">favorite_border</i>
                                     </a>
-                                    <a href="#" class="quick-view hidden-sm-down pt-bt">
+                                    <a href="#" class="quickView hidden-sm-down pt-bt">
                                         <i class="material-icons">preview</i>
                                     </a>
                                 </div>
+
                             </a>
                             
                             <b-card-text class="p-15">
                                 
                                 <b-card-title>
-                                    <h5><a href="#">name</a></h5>
+                                    <h5><a href="#">{{cardTitle}}</a></h5>
                                 </b-card-title>
+
                                 <div class="product-group-price">
-                                    <span itemprop="price" class="price">£789.00</span>
+                                    <span itemprop="price" class="price">{{price}}</span>
                                 </div>
 
                                 <div class="product-comment row text-center m-auto">
-                                    <Rarting :rate="rate" :iId="iId"/>
-                                    <span class="ml-30">0 Reviews</span>
+                                    <Rarting />
+                                    <span class="ml-30">{{reviews}} Reviews</span>
                                 </div>
                                 <a class="addToCart" href="#">
                                     <i class="icon-cart"></i>
@@ -45,9 +47,11 @@
                             <b-card-footer>
                                 <Vendor />
                             </b-card-footer>
+
                         </b-card>
 
                     <!-- <b-card-group> -->
+
                 </div>
                         
             </div>
@@ -62,8 +66,10 @@ import Rarting from '@/components/Home/productCard/_product-rating';
 import Vendor from '@/components/Home/productCard/_product-vendor'
 
 export default {
+    props:["cardTitle","img_1","img_2","sale","_new","price","rating","reviews","vendor"],
     components:{Rarting,Vendor}
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -76,6 +82,9 @@ export default {
                 }
                 &:first-of-type{
                     margin-#{$left}: 15px;
+                }
+                img{
+                    height: 226px;
                 }
             }
             .product-miniature{
@@ -185,10 +194,11 @@ export default {
                 left: 0;
                 margin-top: -50px;
                 
-                .addToWishlist,.quick-view {
+                .addToWishlist,.quickView {
                     background-color: $f;
                     text-align: center;
                     margin: 0px 10px;
+                    padding: 2px;
                     border-radius: 2px;
                     transform: translateY(30px);
                     width: 35px;
@@ -201,6 +211,8 @@ export default {
                     i{
                         color: #727272;
                         font-size: 1.1rem;
+                        color: $HeaderBar_with_Op;
+                        text-shadow: 1px 1px 2px #105caa38;
                     }
                     &:hover{
                         background-color: $WebGrn;
@@ -211,8 +223,13 @@ export default {
                 }
                 .addToWishlist{
                     @include transition(.75);
+                    i{
+                        color: #f00;
+                        text-shadow: 1px 1px 2px #df030163;
+                    }
                 }
             }
+            
             .addToCart{
                 position: absolute;
                 text-align: center;
@@ -273,7 +290,7 @@ export default {
                     
                 }
                 .button-top {
-                    .addToWishlist,.quick-view{
+                    .addToWishlist,.quickView{
                         @include returnC();
                     }
                 }

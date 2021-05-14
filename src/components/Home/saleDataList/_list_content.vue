@@ -2,38 +2,39 @@
     <div class="block_content">
         <div class="tab-content">
             <div class="nov-productslick spacing-30">
-                <div class="tab-pane fade active">
-                    <div class="slick-container">
+                
+                <div id="New-tab" class="tab-pane fade active" role="tabpanel" aria-labelledby="sale-home-list">
+                    <div v-if="listDataCard.length > 0" class="slick-container">
                         <OwlCarousel
-                                :dots="true"
-                                :nav="false"
-                                :autoWidth="true">
-                                    <Product-card />
+                            :dots="false"
+                            :nav="false"
+                            :autoWidth="true">
 
-                                    <Product-card />
-
-                                    <Product-card />
-                                    <Product-card />
-
-                                    <Product-card />
-
-                                    <Product-card />
-                                    <Product-card />
-
-                                    <Product-card />
-
-                                    <Product-card />
-                                    <Product-card />
-
-                                    <Product-card />
-
-                                    <Product-card />
+                                <Product-card v-for="cardData in listDataCard" :key="cardData.id" :cardData="cardData" />
+                        
                         </OwlCarousel>
                     </div>
+                    <BSalert v-else :msg="'No products at this time !.'" />
                 </div>
-                <div class="tab-pane fade">
-                    
+                
+                <div id="Best-tab" class="tab-pane fade" role="tabpanel" aria-labelledby="sale-home-list">
+                    <BSalert :msg="'No products at this time !.'"/>
                 </div>
+
+                <div id="noSale-tab" class="tab-pane fade" role="tabpanel" aria-labelledby="sale-home-list">
+                    <div v-if="onSales.length > 0" class="slick-container">
+                        <OwlCarousel
+                            :dots="false"
+                            :nav="false"
+                            :autoWidth="true">
+
+                                <Product-card v-for="onSale in onSales" :key="onSale.id" :cardData="onSale" />
+
+                        </OwlCarousel>
+                    </div>
+                    <BSalert v-else :msg="'No Product in sale'" />
+                </div>
+
             </div>
         </div>
     </div>
@@ -42,9 +43,29 @@
 <script>
 
 import ProductCard from '@/components/Home/_Product_Card';
+import BSalert from '@/components/Home/_BS_Alert.vue'
+
+import jsonData from '../../../assets/models/dataList/dataList.json'
 
 export default {
-    components: {ProductCard}
+    data() {
+        return {
+            listDataCard: jsonData,
+        }
+    },
+    components: {ProductCard,BSalert},
+    
+    computed: {
+        onSales: function(){
+            var data = this.listDataCard.filter(i=>i.sale!="0");
+                console.log(data);
+                console.log("on Sale length => " + data.length);
+            return data;
+        }
+    },
+    created() {
+        console.log(this.listDataCard.length);
+    },
 }
 </script>
 

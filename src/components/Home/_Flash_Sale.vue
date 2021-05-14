@@ -1,10 +1,10 @@
 <template>
-    <div class="flashSale ow wpb_row row-fluid  mr-0 ml-0 mb-0 productdeal  row-has-fill">
+    <div class="flashSale ow wpb_row row-fluid mr-0 ml-0 mb-0 productdeal  row-has-fill">
         
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 wpb_column column_container">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 wpb_column column_container m-auto">
             <flash-Badge />
         </div>
-        <div class="col-xl-10 col-lg-9 col-md-8 col-sm-8 product_right wpb_column column_container">
+        <div class="col-xl-10 col-lg-9 col-md-8 col-sm-12 product_right wpb_column column_container m-auto">
             <flash-Slick />
         </div>
         
@@ -27,6 +27,9 @@ export default {
 .home-1-edit{
     .flashSale{
         background-color: #eb4f19 !important;
+        .owl-dots{
+            display: none !important;
+        }
     }
 }
 </style>
