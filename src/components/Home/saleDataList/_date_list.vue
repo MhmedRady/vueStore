@@ -1,12 +1,12 @@
 <template>
-    <div class="dataList col-sm-8 wpb_column vc_column_container">
+    <div class="dataList col-md-8 wpb_column vc_column_container">
         <div class="vc_column-inner ">
             <div class="wpb_wrapper">
                 <div class="productTabs tab-slider">
                     <div class="block-producttabs clearfix">
                         <div class="d-flex align-items-center d-xs-block block_nav">
 										
-                            <ul class="nav nav-tabs" role="tablist">
+                            <ul class="nav nav-tabs _mr-sm-auto" role="tablist">
                                 
                                 <li class="nav-item">
                                     <a href="#New-tab" class="nav-link active" role="tab" data-toggle="tab" aria-controls="New-tab" aria-selected="true">New Arrivals</a>

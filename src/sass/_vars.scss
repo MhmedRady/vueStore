@@ -46,8 +46,9 @@
   
   $mobile: 740px;
 
-  $minMobile_Rot: 360px;
-  $maxMobile_Rot: $mobile;
+  $minMobile_sm_s: 360px;
+  $minMobile_sm: 576px;
+  $maxMobile_sm: $mobile;
 
   $maxMobile: 767px;
   $minIpad: 768px;

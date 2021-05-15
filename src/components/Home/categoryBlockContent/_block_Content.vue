@@ -13,7 +13,7 @@
                             </div>
                             <div class="block_content">
                                 <div class="row no-flow spacing-10">
-                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
+                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10 mb-sm-3">
                                         <div class="pos-r item">
                                             <a href="#">
                                                 <span><img src="../../../assets/images/block-category/electronic1.jpg" class="img-fluid "></span>
@@ -21,7 +21,7 @@
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
+                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10 mb-sm-3">
                                         <div class="pos-r item">
                                             <a href="#">
                                                 <span><img src="../../../assets/images/block-category/electronic2.jpg" class="img-fluid"></span>
@@ -101,11 +101,11 @@
                             <div class="block_content">
                                 <div class="row no-flow spacing-10">
                                     
-                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back">
+                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-sm-2 image-back">
                                         <div class="pos-r item">
                                             <a href="#"><span><img src="../../../assets/images/block-category/audio1.jpg" class="img-fluid"></span></a>
                                             <a class="pos-a" href="#">Headphone</a></div></div>
-                                            <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back">
+                                            <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-sm-2 image-back">
                                                 <div class="pos-r item">
                                                     <a href="#"><span><img src="../../../assets/images/block-category/audio2.jpg" class="img-fluid"></span></a>
                                                     <a class="pos-a" href="#">Portable Speaker</a>
@@ -137,7 +137,7 @@
                             </div>
                             <div class="block_content">
                                 <div class="row no-flow spacing-10">
-                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
+                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-10 mb-sm-3 image-back">
                                         <div class="pos-r item">
                                             <a href="#">
                                                 <span><img src="../../../assets/images/block-category/valentine1.jpg" class="img-fluid"></span>
@@ -145,7 +145,7 @@
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
+                                    <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-10 mb-sm-3 image-back">
                                         <div class="pos-r item">
                                             <a href="#">
                                                 <span><img src="../../../assets/images/block-category/valentine2.jpg" class="img-fluid"></span>
@@ -218,9 +218,7 @@ export default {
             }
             .item{
                 overflow: hidden;
-                @media screen and(max-width: $maxMobile_Rot) and(max-width: $minMobile_Rot) {
-                    
-                }
+                
                 span{
                     width: 100%;
                 }

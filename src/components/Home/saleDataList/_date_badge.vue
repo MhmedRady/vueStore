@@ -1,5 +1,5 @@
 <template>
-    <div class="date_badge col-sm-4 wpb_column column_container">
+    <div class="date_badge col-md-4 wpb_column column_container">
         <div class="vc_column-inner ">
             <div class="wpb_wrapper">
                 <div class="wpb_single_image wpb_content_element mt-8 vc_align_center">
