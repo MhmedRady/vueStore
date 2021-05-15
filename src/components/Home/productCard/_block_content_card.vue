@@ -9,8 +9,8 @@
                         <b-card class="rounded-0 p-0" img-top>
 
                             <a href="#" class="two-image">
-                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_1}`)" class="xh-n rounded-0 p-5 img-fluid image-cover"></b-card-img-lazy>
-                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_2}`)" class="xh-n rounded-0 p-5 img-fluid image-secondary image-cover"></b-card-img-lazy>
+                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_1}`)" :alt="cardTitle" class="xh-n rounded-0 p-5 img-fluid image-cover"></b-card-img-lazy>
+                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_2}`)" :alt="cardTitle" class="xh-n rounded-0 p-5 img-fluid image-secondary image-cover"></b-card-img-lazy>
                                 <span v-if="sale !='0'" class="product-flags discount">{{sale}}</span>
                                 <span v-if="_new" class="product-flags new">New</span>
                                 <div class="button-top">

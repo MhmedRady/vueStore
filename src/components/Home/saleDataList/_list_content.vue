@@ -45,7 +45,7 @@
 import ProductCard from '@/components/Home/_Product_Card';
 import BSalert from '@/components/Home/_BS_Alert.vue'
 
-import jsonData from '../../../assets/models/dataList/dataList.json'
+import jsonData from '../../../assets/models/Home/dataList/dataList.json'
 
 export default {
     data() {
@@ -58,8 +58,8 @@ export default {
     computed: {
         onSales: function(){
             var data = this.listDataCard.filter(i=>i.sale!="0");
-                console.log(data);
-                console.log("on Sale length => " + data.length);
+                // console.log(data);
+                // console.log("on Sale length => " + data.length);
             return data;
         }
     },

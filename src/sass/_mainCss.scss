@@ -63,8 +63,48 @@
     .ml-#{$var}{
         margin-left: $var+px !important;
     }
-
 }
+
+/*** MARGIN & PADDING IN rem ***/
+@for $var from 0 through 5 {
+
+    /*****  PADDING rem  *****/
+
+    [class*="p-#{$var}r"]{
+        padding: $var+rem !important;
+    }
+    [class*="pt-#{$var}r"]{
+        padding-top: $var+rem !important;
+    }
+    [class*="pb-#{$var}r"]{
+        padding-bottom: $var+rem !important;
+    }
+    [class*="pr-#{$var}r"]{
+        padding-right: $var+rem !important;
+    }
+    [class*="pl-#{$var}r"]{
+        padding-left: $var+rem !important;
+    }
+    
+    /*****  MARGIN rem  *****/
+
+    [class*="m-#{$var}r"]{
+        margin: $var+rem !important;
+    }
+    [class*="mt-#{$var}r"]{
+        margin-top: $var+rem !important;
+    }
+    [class*="mb-#{$var}r"]{
+        margin-bottom: $var+rem !important;
+    }
+    [class*="mr-#{$var}r"]{
+        margin-right: $var+rem !important;
+    }
+    [class*="ml-#{$var}r"]{
+        margin-left: $var+rem !important;
+    }
+}
+
 
 @media screen and(min-width:$minMobile_sm) and(max-width:$maxMobile_sm) {
     [class*="_m-sm-auto"]{
@@ -202,34 +242,14 @@
         max-width: 100%;
     }
     .wpb_wrapper {
-        position: relative;
-        overflow: hidden;
-        &::after {
-            content: "";
-            display: inline-block;
-            width: 150%;
-            height: 80%;
-            position: absolute;
-            right: 32%;
-            top: -75%;
-            background: rgba(255,255,255,.15);
-            -webkit-transform: skewY(-50deg);
-            -moz-transform: skewY(-50deg);
-            -ms-transform: skewY(-50deg);
-            -o-transform: skewY(-50deg);
-            transform: skewY(-50deg);
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
-        &:hover::after {
-            right: -75%;
-            top: 120%;
-        }
+        @extend  %wpb_wrapper;    
+    }
+    .wpb_wrapper-1 {
+        @extend  %wpb_wrapper-1;    
     }
 }
+
+
 
 .form-control {
     height: 44px;

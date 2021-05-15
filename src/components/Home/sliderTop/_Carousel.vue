@@ -28,7 +28,7 @@
 
 <script>
 import caeouselComp from "@/components/Home/sliderTop/_carousel_Comp.vue"
-import sliderJson from '../../../assets/models/sliderTop/sliderTop.json'
+import sliderJson from '../../../assets/models/Home/sliderTop/sliderTop.json'
 
 export default {
   name: "slideTop",
