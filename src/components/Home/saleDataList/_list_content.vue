@@ -97,7 +97,14 @@ export default {
                 opacity: 1;
                 display: contents !important;
             }
-            
+            .product-card{
+                &:not(:last-child){
+                    margin-#{$right}: 15px;
+                }
+                &:first-of-type{
+                    margin-#{$left}: 15px;
+                }
+            }
         }
     }
 }

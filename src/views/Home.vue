@@ -1,5 +1,5 @@
 <template>
-    <section class="homePage container">
+    <section class="homePage">
         <HomeCopm />
     </section>
 </template>

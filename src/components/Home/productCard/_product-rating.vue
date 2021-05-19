@@ -1,6 +1,6 @@
 <template>
     <div class="card-rating">
-        <Product-Rate />
+        <Product-Rate :rating="rate"/>
     </div>
 </template>
 
@@ -8,6 +8,7 @@
 
 import ProductRate from '@/components/Home/_Product-Rate'
 export default {
-    components:{ProductRate}
+    props:["rate"],
+    components:{ProductRate},
 }
 </script>

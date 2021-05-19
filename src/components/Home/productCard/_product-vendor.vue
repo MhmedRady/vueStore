@@ -1,14 +1,20 @@
 
 <template>
-    <div  class="product-vendor">
+    <div class="product-vendor">
         <a href="#">
             <span class="p-item d-flex align-items-center">
                 <i class="material-icons pr-6">storefront</i>
-                vendor
+                {{vendor}}
             </span>
         </a>
     </div>
 </template>
+
+<script>
+export default {
+    props:['vendor']
+}
+</script>
 
 <style lang="scss" scoped>
 

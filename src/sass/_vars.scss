@@ -37,7 +37,7 @@
   $overlayZ: 1000;
   $topMenuZ: 10000;
 
-  $popFont: "Poppins",sans-serif;
+  $popFont: Pop;
   /* ########## START MEDIA QUERY ########## */
 
   $small: 300px;
@@ -50,6 +50,7 @@
   $minMobile_sm: 576px;
   $maxMobile_sm: $mobile;
 
+  $maxIphone: 414px;
   $maxMobile: 767px;
   $minIpad: 768px;
   $ipad: 1024px;
@@ -137,6 +138,7 @@
         visibility: visible;
         opacity: 1;
     }
+    
   /* ########## END MIXINs FUNCTIONS ########## */
 
   /* ########## START IMAEGES AND ICONS ########## */
@@ -222,7 +224,7 @@
           color: #222;
           width: 95%;
           z-index: 0;
-          background-color: transparent;
+          background-color: #2221;
           @include opacity(0);
           @include transition(1);
       }

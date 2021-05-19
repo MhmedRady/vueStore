@@ -7,7 +7,7 @@
                 <template #img>
                     <div 
                     class="backImg d-block img-fluid w-100"
-                    :style="{ backgroundImage: 'url(' + require(`../../../assets/images/slider-top/${Img}`) + ')' }"
+                    :style="{ backgroundImage: 'url(' + require(`../../../assets/images/Home/slider-top/${Img}`) + ')' }"
                     >
                     </div>
                 </template>

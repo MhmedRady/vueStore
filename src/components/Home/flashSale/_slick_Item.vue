@@ -7,8 +7,8 @@
                         <b-row no-gutters>
                         <b-col md="6" class="thumbnail-container">
                             <a href="#" class="thumbnail product-thumbnail two-image">
-                                <b-card-img :src="require(`../../../assets/images/flash-sale/${img1}`)" :alt="Title" class="rounded-0 p-20 img-fluid image-cover"></b-card-img>
-                                <b-card-img :src="require(`../../../assets/images/flash-sale/${img2}`)" :alt="Title" class="rounded-0 p-20 img-fluid image-secondary image-back"></b-card-img>
+                                <b-card-img :src="require(`../../../assets/images/Home/flash-sale/carousel/${img1}`)" :alt="Title" class="rounded-0 p-20 img-fluid image-cover"></b-card-img>
+                                <b-card-img :src="require(`../../../assets/images/Home/flash-sale/carousel/${img2}`)" :alt="Title" class="rounded-0 p-20 img-fluid image-secondary image-back"></b-card-img>
                             </a>
                         </b-col>
                         <b-col md="6">

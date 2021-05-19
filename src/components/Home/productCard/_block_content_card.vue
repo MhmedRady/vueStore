@@ -1,7 +1,7 @@
 <template>
 <!-- <div class="slick-container"> -->
     <!-- <div class="raw flex-nowrap"> -->
-        <div class="item col- pl-xs-5 pr-xs-5 pt-5 mb-30 slick-slide slick-current slick-active">
+        <b-col  :id="id" :class="`product-card item col- ${cardClass} pl-xs-5 pr-xs-5 pt-5 pl-0 pr-0 mb-30 slick-slide slick-current slick-active`">
             <div class="product-miniature js-product-miniature item-one lupanh first_item">
                 <div class="thumbnail-container nov-productdeals">
                     <!-- <b-card-group> -->
@@ -9,8 +9,8 @@
                         <b-card class="rounded-0 p-0" img-top>
 
                             <a href="#" class="two-image">
-                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_1}`)" :alt="cardTitle" class="xh-n rounded-0 p-5 img-fluid image-cover"></b-card-img-lazy>
-                                <b-card-img-lazy :src="require(`../../../assets/images/data-list/list-content/${img_2}`)" :alt="cardTitle" class="xh-n rounded-0 p-5 img-fluid image-secondary image-cover"></b-card-img-lazy>
+                                <b-card-img-lazy :src="require(`../../../assets/images/product-items/${img_1}`)" :alt="cardTitle" class="xh-n rounded-0 p-5 img-fluid image-cover"></b-card-img-lazy>
+                                <b-card-img-lazy :src="require(`../../../assets/images/product-items/${img_2}`)" :alt="cardTitle" class="xh-n rounded-0 p-5 img-fluid image-secondary image-cover"></b-card-img-lazy>
                                 <span v-if="sale !='0'" class="product-flags discount">{{sale}}</span>
                                 <span v-if="_new" class="product-flags new">New</span>
                                 <div class="button-top">
@@ -34,9 +34,9 @@
                                     <span itemprop="price" class="price">{{price}}</span>
                                 </div>
 
-                                <div class="product-comment row text-center m-auto">
-                                    <Rarting />
-                                    <span class="ml-30">{{reviews}} Reviews</span>
+                                <div class="product-comment row text-center m-auto justify-content-between d-flex">
+                                    <Rarting :rate="rating"/>
+                                    <span class="pos-r d-block"><strong>{{reviews>100?"+100":reviews}}</strong> Reviews</span>
                                 </div>
                                 <a class="addToCart" href="#">
                                     <i class="icon-cart"></i>
@@ -45,7 +45,7 @@
                             </b-card-text>
 
                             <b-card-footer>
-                                <Vendor />
+                                <Vendor :vendor="vendor"/>
                             </b-card-footer>
 
                         </b-card>
@@ -56,7 +56,7 @@
                         
             </div>
         <!-- </div> -->
-    </div>
+    </b-col>
 <!-- </div> -->
 </template>
 
@@ -66,23 +66,23 @@ import Rarting from '@/components/Home/productCard/_product-rating';
 import Vendor from '@/components/Home/productCard/_product-vendor'
 
 export default {
-    props:["cardTitle","img_1","img_2","sale","_new","price","rating","reviews","vendor"],
+    props:["id","cardClass","cardTitle","img_1","img_2","sale","_new","price","rating","reviews","vendor"],
     components:{Rarting,Vendor}
 }
 
 </script>
 
 <style lang="scss" scoped>
-    .block_content_card{
-        .tab-content{
-            .item{
-                width:230px !important;
-                &:not(:last-child){
-                    margin-#{$right}: 15px;
-                }
-                &:first-of-type{
-                    margin-#{$left}: 15px;
-                }
+    // .tab-content{
+        .product-card{
+            &.item{
+                width:230px;
+                // &:not(:last-child){
+                //     margin-#{$right}: 15px;
+                // }
+                // &:first-of-type{
+                //     margin-#{$left}: 15px;
+                // }
                 img{
                     height: 226px;
                 }
@@ -178,8 +178,8 @@ export default {
                     @include fontSize(.75);
                     >span{
                         @include f-F;
-                        color: $subColor;
-                        line-height: 2.2;
+                        color: #858585;
+                        top: 5px;
                         display: block;
                     }
                 }
@@ -302,9 +302,7 @@ export default {
                 max-height: 150px;
                 min-width: 150px;
             }
-            } 
-    
-        }
+        } 
     }
     
 

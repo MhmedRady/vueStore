@@ -1,7 +1,7 @@
 <template>
   <main id="body">
     <HeaderBar />
-    <router-view />
+    <router-view class="container"/>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -58,7 +58,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   font-family: Oxy;
-  
+  >.container{
+    @extend %queryCONTAINER;
+  }
   .image-cover,
   .image-back{
     background-image: url("../assets/svg/loading.gif");

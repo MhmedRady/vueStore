@@ -5,7 +5,7 @@
                 <div class="wpb_single_image wpb_content_element mt-8 vc_align_center">
                     <div class="wpb_wrapper">
                         <a href="#" target="_self">
-                            <img class="box_border_grey " alt="" src="../../../assets/images/data-list/smarphone.jpg">
+                            <img class="box_border_grey " alt="" src="../../../assets/images/Home/data-list/smarphone.jpg">
                         </a>
                     </div> 
                 </div> 

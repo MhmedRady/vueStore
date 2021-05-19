@@ -4,14 +4,14 @@
             <div class="wpb_single_image wpb_content_element mb-15 mb-xs-30 align_center">
                 <div class="wpb_wrapper">
                     <router-link to="/" target="_self">
-                        <img src="../../../assets/images/slider-top/bn-1.jpg" alt="" class=" box_border_grey ">
+                        <img src="../../../assets//images/Home/slider-top/bn-1.jpg" alt="" class=" box_border_grey ">
                     </router-link>
                 </div>
             </div>
             <div class="wpb_single_image wpb_content_element align_center">
                 <div class="wpb_wrapper">
                     <router-link to="/" target="_self">
-                        <img src="../../../assets/images/slider-top/bn-3.jpg" alt="" class=" box_border_grey ">
+                        <img src="../../../assets//images/Home/slider-top/bn-3.jpg" alt="" class=" box_border_grey ">
                     </router-link>
                 </div>
             </div>
@@ -20,14 +20,14 @@
             <div class="wpb_single_image wpb_content_element mb-15 mb-xs-30 align_center">
                 <div class="wpb_wrapper">
                     <router-link to="/" target="_self">
-                        <img src="../../../assets/images/slider-top/bn-2.jpg" alt="" class=" box_border_grey ">
+                        <img src="../../../assets//images/Home/slider-top/bn-2.jpg" alt="" class=" box_border_grey ">
                     </router-link>
                 </div>
             </div>
             <div class="wpb_single_image wpb_content_element align_center">
                 <div class="wpb_wrapper">
                     <router-link to="/" target="_self">
-                        <img src="../../../assets/images/slider-top/bn-4.jpg" alt="" class=" box_border_grey ">
+                        <img src="../../../assets//images/Home/slider-top/bn-4.jpg" alt="" class=" box_border_grey ">
                     </router-link>
                 </div>
             </div>

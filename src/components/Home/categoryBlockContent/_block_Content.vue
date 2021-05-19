@@ -16,7 +16,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10 mb-sm-3">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/electronic1.jpg" class="img-fluid "></span>
+                                                <span><img src="../../../assets/images/Home/block-category/electronic1.jpg" class="img-fluid "></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
@@ -24,7 +24,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10 mb-sm-3">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/electronic2.jpg" class="img-fluid"></span>
+                                                <span><img src="../../../assets/images/Home/block-category/electronic2.jpg" class="img-fluid"></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
@@ -32,7 +32,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/electronic3.jpg" class="img-fluid"></span>
+                                                <span><img src="../../../assets/images/Home/block-category/electronic3.jpg" class="img-fluid"></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
@@ -40,7 +40,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/electronic4.jpg" class="img-fluid"></span>
+                                                <span><img src="../../../assets/images/Home/block-category/electronic4.jpg" class="img-fluid"></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
@@ -66,17 +66,17 @@
                                 <div class="row no-flow spacing-10">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 pl-5 pr-5 mb-10">
                                         <div class="pos-r item">
-                                            <a href="#"><span><img src="../../../assets/images/block-category/computer1.jpg" class="img-fluid"></span></a>
+                                            <a href="#"><span><img src="../../../assets/images/Home/block-category/computer1.jpg" class="img-fluid"></span></a>
                                             <a class="pos-a" href="#">Top 10 Laptop for Designer</a>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back">
                                         <div class="pos-r item">
-                                            <a href="#"><span><img src="../../../assets/images/block-category/computer2.jpg" class="img-fluid"></span></a>
+                                            <a href="#"><span><img src="../../../assets/images/Home/block-category/computer2.jpg" class="img-fluid"></span></a>
                                             <a class="pos-a" href="#">Mouse</a></div></div>
                                             <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back">
                                                 <div class="pos-r item">
-                                                    <a href="#"><span><img src="../../../assets/images/block-category/computer3.jpg" class="img-fluid"></span></a>
+                                                    <a href="#"><span><img src="../../../assets/images/Home/block-category/computer3.jpg" class="img-fluid"></span></a>
                                                     <a class="pos-a" href="#">Monitor</a>
                                                 </div>
                                             </div>
@@ -103,11 +103,11 @@
                                     
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-sm-2 image-back">
                                         <div class="pos-r item">
-                                            <a href="#"><span><img src="../../../assets/images/block-category/audio1.jpg" class="img-fluid"></span></a>
+                                            <a href="#"><span><img src="../../../assets/images/Home/block-category/audio1.jpg" class="img-fluid"></span></a>
                                             <a class="pos-a" href="#">Headphone</a></div></div>
                                             <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-sm-2 image-back">
                                                 <div class="pos-r item">
-                                                    <a href="#"><span><img src="../../../assets/images/block-category/audio2.jpg" class="img-fluid"></span></a>
+                                                    <a href="#"><span><img src="../../../assets/images/Home/block-category/audio2.jpg" class="img-fluid"></span></a>
                                                     <a class="pos-a" href="#">Portable Speaker</a>
                                                 </div>
                                             </div>
@@ -115,7 +115,7 @@
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 pl-0 pr-0 mt-10">
                                         <div class="pos-r item">
-                                            <a href="#"><span><img src="../../../assets/images/block-category/audio3.jpg" class="img-fluid"></span></a>
+                                            <a href="#"><span><img src="../../../assets/images/Home/block-category/audio3.jpg" class="img-fluid"></span></a>
                                             <a class="pos-a" href="#">Computer Speakers</a>
                                         </div>
                                     </div>
@@ -140,7 +140,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-10 mb-sm-3 image-back">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/valentine1.jpg" class="img-fluid"></span>
+                                                <span><img src="../../../assets/images/Home/block-category/valentine1.jpg" class="img-fluid"></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
@@ -148,7 +148,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 mb-10 mb-sm-3 image-back">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/valentine2.jpg" class="img-fluid"></span>
+                                                <span><img src="../../../assets/images/Home/block-category/valentine2.jpg" class="img-fluid"></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
@@ -156,7 +156,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/valentine3.jpg" class="img-fluid"></span>
+                                                <span><img src="../../../assets/images/Home/block-category/valentine3.jpg" class="img-fluid"></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>
@@ -164,7 +164,7 @@
                                     <div class="col-xl-6 col-xl-3 col-lg-6 col-md-6 col-6 col-xs-6 pl-5 pr-5 image-back mb-10">
                                         <div class="pos-r item">
                                             <a href="#">
-                                                <span><img src="../../../assets/images/block-category/valentine4.jpg" class="img-fluid"></span>
+                                                <span><img src="../../../assets/images/Home/block-category/valentine4.jpg" class="img-fluid"></span>
                                             </a>
                                             <a class="pos-a" href="#">Air Conditioner</a>
                                         </div>

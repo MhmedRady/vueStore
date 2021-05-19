@@ -17,7 +17,7 @@ import AOS from 'aos'
 
 import './importPkgs.js'
 
-// import * as globalFun from "./layout/js/helper.js";
+// import myTry from "./layout/js/helper.js";
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
@@ -33,6 +33,7 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  
   created() {
     AOS.init()
   },

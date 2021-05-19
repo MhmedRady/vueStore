@@ -1,10 +1,12 @@
 <template>
-    <div class="row_img_banner mb-5r">
-        <div class="container">
+    <div class="row_img_banner">
+        <!-- <div class="container"> -->
             <div class="row">
-                <Row-Content v-for="imgs in bannetData" :key="imgs.id" :img="imgs.img"/>
+                <Row-Content v-for="imgs in bannetData" :key="imgs.id" :img="imgs.img"
+                    data-aos="zoom-in-center" data-aos-once="true" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+                />
             </div>     
-        </div>      
+        <!-- </div>   -->
     </div>
 </template>
 

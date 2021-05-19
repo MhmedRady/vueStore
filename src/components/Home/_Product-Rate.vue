@@ -1,22 +1,26 @@
 <template>
     <div class="product-rate">
-        <div class="star_rate">
+        <div  class="star_rate">
             <i class="star act"></i>
             <i class="star act"></i>
             <i class="star act"></i>
             <i class="star"></i>
             <i class="star"></i>
-        </div> 
+        </div>
     </div>
 </template>
 
-
+<script>
+export default {
+    props:["rating"],
+}
+</script>
 <style lang="scss" scoped>
-.slick-content{
-    .nov-productdeals
+// .slick-content{
+    .product-card
     {
         .product-rate{
-            padding-left: 15px;
+            // padding-left: 15px;
             margin-bottom: 0;
             margin-top: 0;
             margin-left: auto;
@@ -61,6 +65,6 @@
 
         }    
     }
-}
+// }
 
 </style>

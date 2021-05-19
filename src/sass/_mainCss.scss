@@ -141,7 +141,12 @@
         }
     } 
 }
-
+.r-05r{
+    right: .5rem;
+}
+.l-05r{
+    left: .5rem;
+}
 // @media screen and(min-width: $maxMobile_sm) {
 //     [class*="m-sm-auto"]{
 //         margin: unset !important;
@@ -192,6 +197,11 @@
 .row.spacing-20 {
     margin-left: -10px;
     margin-right: -10px;
+}
+.vc_row.spacing-15,
+.row.spacing-15 {
+    margin-left: -7px;
+    margin-right: -7px;
 }
 .vc_row.spacing-10,
 .row.spacing-10 {
@@ -249,7 +259,12 @@
     }
 }
 
-
+.row.no-flow {
+    -webkit-flex-flow: wrap;
+    -moz-flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+}
 
 .form-control {
     height: 44px;
@@ -487,8 +502,15 @@
     }
 }
 
-.custom_heading h2 {
+.custom_heading {
     margin-bottom: 0;
+    &h2 {
+        margin-bottom: 0;
+    }
+}
+
+.text-left{
+    text-align: $textAlign;
 }
 
 .image-cover,
@@ -518,15 +540,16 @@
 }
 
 .title_block {
-    font-family: "Poppins",sans-serif;
-    font-size: 2.2rem;
+    @include f-F;
+    @include fontSize(1.4);
     color: #222;
     margin-bottom: 45px;
     line-height: 1;
     font-weight: 600;
+    text-transform: capitalize;
     .title_content {
         @include fontSize(1.5);
-        @include f-F();
+        @include f-F;
         position: relative;
         padding-bottom: 15px;
         display: block;
@@ -562,3 +585,10 @@
     }
 }
 
+.nov-category-productlist{
+    overflow: hidden;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
