@@ -1,4 +1,5 @@
 @import './vars';
+
 #body{
     @media screen and(max-width: $maxMobile) {
         > section{
@@ -257,6 +258,10 @@
     .wpb_wrapper-1 {
         @extend  %wpb_wrapper-1;    
     }
+}
+
+.banner1{
+    @extend  %wpb_wrapper-2;    
 }
 
 .row.no-flow {
@@ -529,7 +534,10 @@
 .disabled{
     @include opacity(.3);
 }
-
+.img-max {
+    height: auto;
+    max-width: 100%;
+}
 .vc_custom{
     background-color: $liBorder !important;
 }

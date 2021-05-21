@@ -33,7 +33,7 @@
                                         <span class="regular-price">{{sale}}</span>                     
                                     </div>                                      
                                 </div>
-                                <div class="product-groups" itemprop="offers" itemtype="http://schema">
+                                <div class="product-groups d-flex justify-content-center" itemprop="offers" itemtype="http://schema">
                                     <div class="product-buttons d-flex">
                                         <form action="" method="post">
                                             <input type="hidden" name="_token">
@@ -180,14 +180,8 @@ export default {
                 -ms-opacity: 0;
                 -o-opacity: 0;
                 opacity: 0;
-                -webkit-transform: translateX(30px);
-                -ms-transform: translateX(30px);
-                transform: translateX(30px);
-                -webkit-transition: all 0.3s linear;
-                -moz-transition: all 0.3s linear;
-                -ms-transition: all 0.3s linear;
-                -o-transition: all 0.3s linear;
-                transition: all 0.3s linear;
+                @include transform(translateX(100px));
+                @include transition(0.3, linear);
                 .add-to-cart{
                     .icon-cart{
                         background-image: url(../../../assets/svg/cart-icon.png);
@@ -233,9 +227,7 @@ export default {
                     -ms-opacity: 1;
                     -o-opacity: 1;
                     opacity: 1;
-                    -webkit-transform: translateX(0);
-                    -ms-transform: translateX(0);
-                    transform: translateX(0);
+                    @include transform(translateX(0));
                 }
                 .two-image
                 {

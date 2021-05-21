@@ -175,10 +175,10 @@ export default {
                         
                 }
                 .product-comment{
-                    @include fontSize(.75);
+                    @include fontSize(.65);
                     >span{
                         @include f-F;
-                        color: #858585;
+                        color: #959595;
                         top: 5px;
                         display: block;
                     }

@@ -18,6 +18,7 @@
         </div>
     </div>    
 </template>
+
 <script>
 import TabLinks from '@/components/Home/recommendList/_tab_linkes'
 import ListContent from '@/components/Home/recommendList/_recommened_List'

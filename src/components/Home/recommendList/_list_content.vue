@@ -1,20 +1,20 @@
 <template>
     <div :id="`recom-tab-link-${parent}`" :class="`tab-pane fade ${id==1?`show active`:``}`">
-            <div class="slick-container">
-                <SlickCarousel
-                    :touchMove="false"
-                    :autoplay="false"
-                    :dots="false"
-                    :arrows="false"
-                    :swipeToSlide="true"
-                    :rows="1"
-                    > 
-                    <div class="row spacing-15">
-                        <P-Card v-for="card in parentItems" :key="card.id" :_id="`recomm-item`" :cardClass="'col-md-4 col-lg-3'" :cardData="card" />
-                    </div>
-                </SlickCarousel>
-            </div>
+        <div class="slick-container">
+            <SlickCarousel
+                :touchMove="false"
+                :autoplay="false"
+                :dots="false"
+                :arrows="false"
+                :swipeToSlide="true"
+                :rows="1"
+                > 
+                <div class="row spacing-15">
+                    <P-Card v-for="card in parentItems" :key="card.id" :_id="`recomm-item`" :cardClass="'col-md-4 col-lg-3'" :cardData="card" />
+                </div>
+            </SlickCarousel>
         </div>
+    </div>
 </template>
 
 <script>
@@ -29,7 +29,6 @@ export default {
     computed:{
         parentItems: function(){
             var items = this.cardContent.filter(i=>i.parent==this.parent)
-            console.log(items[4].rate);
             return items;
         }
     },

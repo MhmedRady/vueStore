@@ -118,6 +118,20 @@
         overflow: hidden;
         display: block;
     }
+    
+    .nov-category-product{
+        .category-banner{
+            > .col-md-4{
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+        }
+        .banner1 {
+            position: relative;
+            cursor: pointer;
+        }
+    }
+
     .nov-category-productlist {
         overflow: hidden;
         margin-left: -5px;
