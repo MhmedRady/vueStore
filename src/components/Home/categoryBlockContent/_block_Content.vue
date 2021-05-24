@@ -7,7 +7,7 @@
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
                         <div class="block-group-image">
-                            <div class="block_header d-flex align-items-center mb-25">
+                            <div class="block_header d-flex align-items-center mb-25 border-none">
                                 <h2 class="title">Electronic</h2>
                                 <a href="#">View All Categories</a>
                             </div>
@@ -59,7 +59,7 @@
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
                         <div class="block-group-image">
-                            <div class="block_header d-flex align-items-center mb-25">
+                            <div class="block_header d-flex align-items-center mb-25 border-none">
                                 <h2 class="title">Computer</h2>									<a href="#">View All Categories</a>
                             </div>
                             <div class="block_content">
@@ -94,7 +94,7 @@
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
                         <div class="block-group-image">
-                            <div class="block_header d-flex align-items-center mb-25">
+                            <div class="block_header d-flex align-items-center mb-25 border-none">
                                 <h2 class="title">Audio</h2>									
                                 <a href="#">View All Categories</a>
                             </div>
@@ -131,7 +131,7 @@
                 <div class="wpb_wrapper">
                     <div class="group_image_text">
                         <div class="block-group-image">
-                            <div class="block_header d-flex align-items-center mb-25">
+                            <div class="block_header d-flex align-items-center mb-25 border-none">
                                 <h2 class="title">Gift for valentine</h2>
                                 <a href="#">View All Categories</a>
                             </div>

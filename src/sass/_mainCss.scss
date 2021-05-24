@@ -179,6 +179,14 @@
     position: static !important;
 }
 
+.border-none{
+    border: none !important;
+}
+
+.flex-0-auto{
+    flex: 0 0 auto !important;
+}
+
 /*** WP_ ***/
 .wpb_row {
     clear: both;
@@ -542,7 +550,8 @@
     background-color: $liBorder !important;
 }
 
-.vc_column-inner{
+.vc_column-inner,
+.column-inner{
     height: 100%;
     width: 100%;
 }
@@ -551,7 +560,7 @@
     @include f-F;
     @include fontSize(1.4);
     color: #222;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     line-height: 1;
     font-weight: 600;
     text-transform: capitalize;
@@ -599,4 +608,90 @@
     margin-right: -5px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.block_header{
+    border-bottom: 8px solid $HeaderBar_Co;
+    padding-bottom: 0;
+    .see-more{
+        font-family: Pop;
+        margin-left: auto;
+        margin-right: 0;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #959595;
+        font-weight: 700;
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        text-decoration: none;
+        i{
+            color: $HeaderBar_Co;
+            font-size: 22px;
+            padding-left: 5px;
+            display: flex;
+            line-height: .7rem;
+        }
+        &:hover{
+            color: $HeaderBar_Co;
+        }
+    }
+}
+
+.f-bold{
+    font-weight: bold !important;
+}
+
+.bloglist{
+    .post-time,
+    .post-comment{
+        padding: 8px 18px;
+        border-radius: 3px;
+        background-color: $WebGrn;
+        top: 10px;
+        left: 15px;
+        color: #000;
+        text-align: center;
+        box-shadow: $btnShadow;
+        .date{
+            font-weight: 700;
+            font-family: PopB;
+            font-size: .7rem;
+        }
+        .month,.icon{
+            position: relative;
+            margin-top: 3px;
+            padding-top: 7px;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: Pop;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 28px;
+                height: 2px;
+                background: rgba(255,255,255,.3);
+                top: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .post-time{
+        background-color: $f;
+        .month{
+            &::before{
+                background: rgba(0,0,0,.3);
+            }
+        }
+    }    
 }

@@ -157,6 +157,38 @@
             }
         }
     }
+    .block-list{
+        ul {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+            padding-left: 0;
+            list-style: none;
+            overflow: hidden;
+                overflow-x: hidden;
+            overflow-x: auto;
+            li {
+                line-height: 50px;
+                padding-right: 40px;
+                a {
+                    text-transform: capitalize;
+                    color: #666;
+                    font-size: 12px;
+                    font-weight: 500;
+                    @include f-F(OxyB);
+                    &:hover{
+                        color: $WebGrn;
+                    }
+                }
+            }
+        }
+    }
+    .our-Blog {
+        .owl-item{
+            @media screen and(max-width:$minIpad){
+                width: 340px !important;
+            }
+        }
+    }
 }
 
 // .flashSale{

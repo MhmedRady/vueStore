@@ -16,7 +16,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import AOS from 'aos'
 
 import './importPkgs.js'
-
+import './layout/js/filters'
 // import myTry from "./layout/js/helper.js";
 
 // Make BootstrapVue available throughout your project

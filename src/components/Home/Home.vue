@@ -21,6 +21,9 @@
 
             <!-- /** HOMEAPPLIANCE LIST **/ -->
             <Home-Appliance />
+
+            <!-- /** OUR BLOG **/ -->
+            <Our-Blog />
              
         </div>
     </div>
@@ -33,8 +36,8 @@ import BlockContent from '@/components/Home/_Category_Block_Content.vue';
 import SaleList from '@/components/Home/_Sale_Data_List';
 import RowImgs from '@/components/Home/_Row_3_Img';
 import RecommendedList from '@/components/Home/_Recommended';
-
 import HomeAppliance from '@/components/Home/_Home_Apps'
+import OurBlog from '@/components/Home/_Our_Blog'
 
 export default {
     components: {
@@ -44,7 +47,8 @@ export default {
         SaleList,
         RowImgs,
         RecommendedList,
-        HomeAppliance
+        HomeAppliance,
+        OurBlog
     }
 }
 </script>

@@ -29,37 +29,3 @@ export default {
     components: {ListLinks,BannerImgs,TabsList}
 }
 </script>
-
-<style lang="scss" scoped>
-    .block_header{
-        border-bottom: 8px solid $HeaderBar_Co;
-        padding-bottom: 0;
-        .see-more{
-            font-family: Pop;
-            margin-left: auto;
-            margin-right: 0;
-            font-size: 11px;
-            text-transform: uppercase;
-            color: #959595;
-            font-weight: 700;
-            display: -webkit-box;
-            display: -moz-box;
-            display: box;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flexbox;
-            display: flex;
-            text-decoration: none;
-            i{
-                color: $HeaderBar_Co;
-                font-size: 22px;
-                padding-left: 5px;
-                display: flex;
-                line-height: .7rem;
-            }
-            &:hover{
-                color: $HeaderBar_Co;
-            }
-        }
-    }
-</style>
