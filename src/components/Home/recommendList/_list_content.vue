@@ -10,7 +10,7 @@
                 :rows="1"
                 > 
                 <div class="row spacing-15">
-                    <P-Card v-for="card in parentItems" :key="card.id" :_id="`recomm-item`" :cardClass="'col-md-4 col-lg-3'" :cardData="card" />
+                    <P-Card v-for="card in parentItems" :key="card.id" :_id="`recomm-item`" :cardClass="'col-md-4 col-lg-3'" :cropT="20" :cardData="card" />
                 </div>
             </SlickCarousel>
         </div>

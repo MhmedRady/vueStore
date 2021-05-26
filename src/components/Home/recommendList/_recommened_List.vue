@@ -8,7 +8,7 @@
 import ListContnet from '@/components/Home/recommendList/_list_content';
 
 import dataList from '../../../assets/models/Home/recommended/tab-list.json';
-import items from '../../../assets/models/Home/recommended/list-items.json';
+import items from '../../../assets/models/Home/list-content/list-content.json';
 
 export default {
     props:["items"],

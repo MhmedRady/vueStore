@@ -29,8 +29,8 @@
                             <b-card-text text-tag="div">
                                 <div class="product-group-price">
                                     <div class="product-price-and-shipping">
-                                        <span itemprop="price" class="price">{{cost}}</span>
-                                        <span class="regular-price">{{sale}}</span>                     
+                                        <span itemprop="price" class="price">{{`$${cost}`}}</span>
+                                        <span class="regular-price">{{`$${sale}`}}</span>                     
                                     </div>                                      
                                 </div>
                                 <div class="product-groups d-flex justify-content-center" itemprop="offers" itemtype="http://schema">

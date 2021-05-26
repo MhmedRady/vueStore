@@ -25,6 +25,8 @@
             <!-- /** OUR BLOG **/ -->
             <Our-Blog />
              
+             <!-- /** UNDER 10 **/ -->
+             <Unde-10 />
         </div>
     </div>
 </template>
@@ -38,6 +40,7 @@ import RowImgs from '@/components/Home/_Row_3_Img';
 import RecommendedList from '@/components/Home/_Recommended';
 import HomeAppliance from '@/components/Home/_Home_Apps'
 import OurBlog from '@/components/Home/_Our_Blog'
+import Unde10 from '@/components/Home/_Under_$10'
 
 export default {
     components: {
@@ -48,7 +51,8 @@ export default {
         RowImgs,
         RecommendedList,
         HomeAppliance,
-        OurBlog
+        OurBlog,
+        Unde10
     }
 }
 </script>

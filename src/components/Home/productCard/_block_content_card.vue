@@ -27,11 +27,18 @@
                             <b-card-text class="p-15">
                                 
                                 <b-card-title>
-                                    <h5><a href="#">{{cardTitle}}</a></h5>
+                                    <h5>
+                                        <router-link to="/" v-if="cardTitle.length>crop">
+                                            {{cardTitle | cropText(crop-1)}}
+                                        </router-link>
+                                        <router-link to="/" v-else>
+                                            {{cardTitle}}
+                                        </router-link>
+                                    </h5>
                                 </b-card-title>
 
                                 <div class="product-group-price">
-                                    <span itemprop="price" class="price">{{price}}</span>
+                                    <span itemprop="price" class="price">{{`$${price}`}}</span>
                                 </div>
 
                                 <div class="product-comment row text-center m-auto justify-content-between d-flex">
@@ -66,8 +73,14 @@ import Rarting from '@/components/Home/productCard/_product-rating';
 import Vendor from '@/components/Home/productCard/_product-vendor'
 
 export default {
-    props:["id","cardClass","cardTitle","img_1","img_2","sale","_new","price","rating","reviews","vendor"],
-    components:{Rarting,Vendor}
+    props:["id","cardClass","cardTitle","cropTitle","img_1","img_2","sale","_new","price","rating","reviews","vendor"],
+    data() {
+        return {
+            crop: this.cropTitle!=null?this.cropTitle:20,
+        }
+    },
+    components:{Rarting,Vendor},
+    
 }
 
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div class="recommenList">
         
-        <div class="row vc_row pt-5r wpb_row row-flud mb-5r row-has-fill vc_custom">
+        <div class="row vc_row pt-4r wpb_row row-flud mb-5r row-has-fill vc_custom">
             
                 <!-- /*** RECOMMEND TITLE & LIST  ***/ -->
                 <recommend-List />

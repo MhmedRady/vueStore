@@ -25,7 +25,7 @@
 
 <script>
 import tapJson from '../../../assets/models/Home/homeAppliance/tab-list.json'
-import itemJson from '../../../assets/models/Home/homeAppliance/list-content.json'
+import itemJson from '../../../assets/models/Home/list-content/list-content.json'
 
 import $ from 'jquery'
 import listContetn from '@/components/Home/HomeAppliance/_home_list_content'

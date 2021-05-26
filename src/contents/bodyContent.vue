@@ -1,5 +1,5 @@
 <template>
-  <main id="body">
+  <main id="body" class="overflow-hidden">
     <HeaderBar />
     <router-view class="container"/>
     <!-- <div id="nav">

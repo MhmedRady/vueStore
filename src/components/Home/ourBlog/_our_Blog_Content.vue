@@ -3,7 +3,7 @@
         <div class="block-product clearfix ">
             <div class="block_header d-flex align-items-center">
                 <h2 class="title_block text-left">
-                    Home Appliance 
+                    our blog 
                 </h2>
                 <router-link class="see-more" to="/">
                     View More

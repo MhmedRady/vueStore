@@ -1,7 +1,7 @@
 [
-    {"id":1,"title":"Austria Bomber Premium","tag_stock":442,"img_1":"austria-bomber-premium.jpg","img_2":"_austria-bomber-premium.jpg","price":"$132.80","sale":"$166.00","vendor":"sport","rate":"3","date":"2022-09-08 14:09:55"},
-    {"id":2,"title":"Integers  Halo Stud Earrings","tag_stock":673,"img_1":"integers-halo-stud-earrings.jpg","img_2":"_integers-halo-stud-earrings.jpg","price":"$678.00","sale":"$542.40","vendor":"hi house","rate":"4","date":"2022-10-28 20:05:18"},
-    {"id":3,"title":"Apple MacBook Pro","tag_stock":870,"img_1":"Apple-MacBook-Pro.jpg","img_2":"_Apple-MacBook-Pro.jpg","price":"$1400.00","sale":"$1500.51","vendor":"top lap","rate":"5","date":"2022-08-17 02:23:44"},
-    {"id":4,"title":"Donec Smart Phone","tag_stock":20,"img_1":"donec-ipsum-nunc-egestas.jpg","img_2":"_donec-ipsum-nunc-egestas.jpg","price":"$21.61","sale":"$24.18","vendor":"alph","rate":"2","date":"2022-10-26 10:22:42"},
-    {"id":5,"title":"Eleifend Gravida Eleifend Ut","tag_stock":88,"img_1":"eleifend-gravida-eleifend-ut.jpg","img_2":"_eleifend-gravida-eleifend-ut.jpg","price":"$8.13","sale":"$12.36","rate":"0","vendor":"kids","date":"2022-09-10 02:28:43"}
+    {"id":1,"title":"Austria Bomber Premium","tag_stock":442,"img_1":"austria-bomber-premium.jpg","img_2":"_austria-bomber-premium.jpg","price":"132.80","sale":"166.00","vendor":"sport","rate":"3","date":"2022-09-08 14:09:55"},
+    {"id":2,"title":"Integers  Halo Stud Earrings","tag_stock":673,"img_1":"integers-halo-stud-earrings.jpg","img_2":"_integers-halo-stud-earrings.jpg","price":"678.00","sale":"542.40","vendor":"hi house","rate":"4","date":"2022-10-28 20:05:18"},
+    {"id":3,"title":"Apple MacBook Pro","tag_stock":870,"img_1":"Apple-MacBook-Pro.jpg","img_2":"_Apple-MacBook-Pro.jpg","price":"1400.00","sale":"1500.51","vendor":"top lap","rate":"5","date":"2022-08-17 02:23:44"},
+    {"id":4,"title":"Donec Smart Phone","tag_stock":20,"img_1":"donec-ipsum-nunc-egestas.jpg","img_2":"_donec-ipsum-nunc-egestas.jpg","price":"21.61","sale":"24.18","vendor":"alph","rate":"2","date":"2022-10-26 10:22:42"},
+    {"id":5,"title":"Eleifend Gravida Eleifend Ut","tag_stock":88,"img_1":"eleifend-gravida-eleifend-ut.jpg","img_2":"_eleifend-gravida-eleifend-ut.jpg","price":"8.13","sale":"12.36","rate":"0","vendor":"kids","date":"2022-09-10 02:28:43"}
 ]

@@ -11,6 +11,7 @@
      :vendor="cardData.vendor"
      :rating="cardData.rate"
      :reviews="cardData.views"
+     :cropTitle="cropT"
      />
 </template>
 
@@ -19,7 +20,7 @@ import ProductCardContent from '@/components/Home/productCard/_block_content_car
 import helperFun from '../../layout/js/helper'
 
 export default {
-    props: ["_id","cardClass","cardData"],
+    props: ["_id","cardClass","cardData","cropT"],
     data() {
         return {
             tryHash : helperFun.hashId(this.cardData.id),
