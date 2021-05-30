@@ -105,8 +105,8 @@
       font-size: $size+$unt !important;
     }
     @mixin MIcon($icon,$fz:1) {
-      font-family: MaterialIcons;
-      content: "\f1cc";
+      font-family: 'Material Icons';
+      content: "#{$icon}";
       @include fontSize($fz);
       text-rendering: auto;
       position: relative;

@@ -9,7 +9,7 @@
                             View More <i class="material-icons">arrow_right</i>
                         </router-link>
                     </div>
-
+                    
                     <Block-content />
 
                 </div>

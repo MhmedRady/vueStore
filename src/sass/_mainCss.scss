@@ -158,6 +158,12 @@
     transition: opacity 0.5s ease 0s;
 }
 
+.wpb_row, 
+.wpb_content_element, 
+.wpb_button{
+    margin-bottom: 30px;
+}
+
 .w-Grn{
     border-bottom: 8px solid $WebGrn !important;
 }
@@ -247,7 +253,9 @@
         width: 50%;
     }
 }
-
+.wpb_wrapper{
+    flex-wrap: wrap;
+}
 .wpb_column{
     &.vc_column_container,
     &.column_container
@@ -291,7 +299,11 @@
     padding-right: 20px;
     @include fontSize(.6);
 }
-
+.title_block span {
+    @media screen and(max-width: $mxIpad){
+        line-height: 1.4;
+    }
+}
 .custom-checkbox {
 
     position: relative;
@@ -409,7 +421,12 @@
 .modal-backdrop{
     background-color: $WB !important;
 }
-
+.b-WebGrn{
+    background-color: $WebGrn !important;
+}
+.c-WebGrn{
+    color: $WebGrn !important;
+}
 .btn.btn-primary{
     box-shadow: 0 4px 3px -1px #105caa91;
 }
@@ -475,6 +492,7 @@
     right: 25px;
     display: block !important;
     top: 11px;
+    line-height: 1.5;
     text-align: center;
     cursor: pointer;
     
@@ -524,6 +542,14 @@
     &h2 {
         margin-bottom: 0;
     }
+    h2{
+        text-transform: capitalize;
+        color: $f;
+        line-height: 1;
+        text-align: $textAlign;
+        @include fontSize(24,px);
+        @include f-F(PopB);
+    }
 }
 
 .text-left{
@@ -550,6 +576,9 @@
     height: auto;
     max-width: 100%;
 }
+.back-cover{
+    background-size: cover;
+}
 .vc_custom{
     background-color: $liBorder !important;
 }
@@ -568,12 +597,27 @@
     line-height: 1;
     font-weight: 600;
     text-transform: capitalize;
+    .title{
+        @include f-F;
+        text-align: $textAlign;
+        text-transform: capitalize;
+    }
     .title_content {
         @include fontSize(1.5);
         @include f-F;
         position: relative;
         padding-bottom: 15px;
         display: block;
+    }
+    .sub_title {
+        display: block;
+        text-align: $textAlign;
+        text-transform: initial;
+        font-size: .7rem;
+        color: #666;
+        font-weight: 550;
+        margin-top: 15px;
+        font-family: Pop;
     }
 }
 

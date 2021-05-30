@@ -27,11 +27,15 @@
              
              <!-- /** UNDER 10 **/ -->
              <Unde-10 />
+
+             <!-- /** MARKETPLACE & CONNECT **/ -->
+             <Marketplace-Connect />
         </div>
     </div>
 </template>
 
 <script>
+
 import SliderTop from '@/components/Home/_Slider_Top.vue';
 import FlashSale from '@/components/Home/_Flash_Sale.vue';
 import BlockContent from '@/components/Home/_Category_Block_Content.vue';
@@ -41,6 +45,7 @@ import RecommendedList from '@/components/Home/_Recommended';
 import HomeAppliance from '@/components/Home/_Home_Apps'
 import OurBlog from '@/components/Home/_Our_Blog'
 import Unde10 from '@/components/Home/_Under_$10'
+import MarketplaceConnect from '@/components/Home/_Marketplace'
 
 export default {
     components: {
@@ -52,7 +57,8 @@ export default {
         RecommendedList,
         HomeAppliance,
         OurBlog,
-        Unde10
+        Unde10,
+        MarketplaceConnect
     }
 }
 </script>

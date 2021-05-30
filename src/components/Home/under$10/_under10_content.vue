@@ -17,7 +17,7 @@
                         <Product-card v-for="cardData in under10" :key="cardData.id" :cardData="cardData" :cropT="20" :class="'mr-5'"/>
                         
                         <View-More :img="'Home/under-$10/banner-2.jpg'"/>
-
+                    
                     </OwlCarousel>
                     
                 </div>

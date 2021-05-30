@@ -155,7 +155,8 @@ export default {
                 top: -2px;
                 cursor: pointer;
                 &::before {
-                    @include MIcon("\e145");
+                    font-weight: normal;
+                    @include MIcon('\e145');
                 }
             }
             &.opened{
@@ -215,7 +216,7 @@ export default {
                 position: relative;
                 z-index: 1001;
                 .title-box {
-                    font-family: "Roboto",sans-serif;
+                    font-family: Pop;
                     font-weight: 700;
                     text-transform: uppercase;
                     color: #222;

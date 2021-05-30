@@ -184,9 +184,17 @@
     }
     .our-Blog {
         .owl-item{
-            @media screen and(max-width:$minIpad){
+            @media screen and(max-width: $minIpad){
                 width: 340px !important;
             }
+        }
+    }
+    .contactform {
+        border: 10px solid $liBorder;
+        padding: 40px 60px 30px 60px;
+
+        @media screen and(max-width: $maxMobile){
+            padding: 20px 20px 0 20px;
         }
     }
 }

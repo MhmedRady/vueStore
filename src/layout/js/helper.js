@@ -71,7 +71,27 @@ var helperFun = {
     hashId: function(id){
         var hashID = Math.round((id<<2654435761)+(id*2*5)+(id<<2654435761)*159733);
         return hashID;
-    }
+    },
+    autoCounter: function (){
+
+        var counters = document.querySelectorAll(".increment-counter");
+        var speed = 200;
+
+        counters.forEach(counter =>{
+            const updatedCount = () =>{
+                
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const inc = target / speed;
+
+                if(count < target){
+                    counter.innerText = count + inc;
+                    setTimeout(updatedCount,100);
+                }
+            }
+           return updatedCount();
+        });
+    },
 
 }
 

@@ -15,9 +15,6 @@
 <script>
 export default {
     props:["To","title","img"],
-    created() {
-        console.log("see more data => " + this.To + " " + " title =>" + this.title + " img =>" + this.img);
-    },
 }
 </script>
 
