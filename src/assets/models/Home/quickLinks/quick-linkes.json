@@ -1,0 +1,81 @@
+[
+    {
+        "titleName":"SMART PHONE",
+        "links" :[
+            {"id":1,"name":"IPhone"},
+            {"id":2,"name":"SamSung"},
+            {"id":3,"name":"Smartphone"},
+            {"id":4,"name":"Motorola"},
+            {"id":5,"name":"Lenovo"},
+            {"id":6,"name":"Xiaomi"},
+            {"id":7,"name":"OPPO"},
+            {"id":8,"name":"HTC"},
+            {"id":9,"name":"Sony Xperia"},
+            {"id":10,"name":"Tablet"},
+            {"id":11,"name":"Air conditioning"},
+            {"id":12,"name":"Spray Mist Fan"},
+            {"id":13,"name":"Washing Machine"},
+            {"id":14,"name":"OPPO"},
+            {"id":15,"name":"HTC"},
+            {"id":16,"name":"Sony Xperia"},
+            {"id":17,"name":"Tablet"},
+            {"id":18,"name":"Air conditioning"},
+            {"id":19,"name":"Spray Mist Fan"},
+            {"id":20,"name":"Washing Machine"}
+        ]
+    },
+    {
+        "titleName":"LAPTOP",
+        "links" :[
+            {"id":1,"name":"IPhone"},
+            {"id":2,"name":"SamSung"},
+            {"id":3,"name":"Smartphone"},
+            {"id":4,"name":"Motorola"},
+            {"id":5,"name":"Lenovo"},
+            {"id":6,"name":"Xiaomi"},
+            {"id":7,"name":"OPPO"},
+            {"id":8,"name":"HTC"},
+            {"id":9,"name":"Sony Xperia"},
+            {"id":10,"name":"Tablet"},
+            {"id":11,"name":"Air conditioning"},
+            {"id":12,"name":"Spray Mist Fan"},
+            {"id":13,"name":"Washing Machine"}
+        ]
+    },
+    {
+        "titleName":"ELECTRONICS",
+        "links" :[
+            {"id":1,"name":"IPhone"},
+            {"id":2,"name":"SamSung"},
+            {"id":3,"name":"Smartphone"},
+            {"id":4,"name":"Motorola"},
+            {"id":5,"name":"Lenovo"},
+            {"id":6,"name":"Xiaomi"},
+            {"id":7,"name":"OPPO"},
+            {"id":8,"name":"HTC"},
+            {"id":9,"name":"Sony Xperia"},
+            {"id":10,"name":"Tablet"},
+            {"id":11,"name":"Air conditioning"},
+            {"id":12,"name":"Spray Mist Fan"},
+            {"id":13,"name":"Washing Machine"}
+        ]
+    },
+    {
+        "titleName":"FASHION",
+        "links" :[
+            {"id":1,"name":"IPhone"},
+            {"id":2,"name":"SamSung"},
+            {"id":3,"name":"Smartphone"},
+            {"id":4,"name":"Motorola"},
+            {"id":5,"name":"Lenovo"},
+            {"id":6,"name":"Xiaomi"},
+            {"id":7,"name":"OPPO"},
+            {"id":8,"name":"HTC"},
+            {"id":9,"name":"Sony Xperia"},
+            {"id":10,"name":"Tablet"},
+            {"id":11,"name":"Air conditioning"},
+            {"id":12,"name":"Spray Mist Fan"},
+            {"id":13,"name":"Washing Machine"}
+        ]
+    }
+]

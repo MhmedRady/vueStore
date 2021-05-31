@@ -621,8 +621,13 @@
     }
 }
 
+.list-inline{
+    display: inline !important;
+}
 .list-inline-item{
+    @include f-F(Pop);
     display: inline-block !important;
+    
 }
 
 .tab-content > .tab-pane {

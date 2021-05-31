@@ -33,6 +33,9 @@
 
             <!-- /** MARKETPLACE Text CONNECT **/ -->
              <Marketplace-Text-Connect />
+
+            <!-- /** QUICK LINKS **/ -->
+             <Quick-Links />
         </div>
     </div>
 </template>
@@ -50,6 +53,7 @@ import OurBlog from '@/components/Home/_Our_Blog'
 import Unde10 from '@/components/Home/_Under_$10'
 import MarketplaceConnect from '@/components/Home/_Marketplace'
 import MarketplaceTextConnect from '@/components/Home/_Marketplace_Text'
+import QuickLinks from '@/components/Home/_Quick_Links'
 
 export default {
     components: {
@@ -64,6 +68,7 @@ export default {
         Unde10,
         MarketplaceConnect,
         MarketplaceTextConnect,
+        QuickLinks
     }
 }
 </script>
