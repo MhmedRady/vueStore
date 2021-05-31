@@ -197,6 +197,77 @@
             padding: 20px 20px 0 20px;
         }
     }
+    .text-content {
+        font-size: 13px;
+        background: #f5f5f5;
+        padding: 40px 40px 20px 40px;
+        border: 1px solid #eaeaea;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        text-align: $textAlign;
+        @include BShadow(5px 5px 5px -2px #cacaca);
+
+        h2{
+            color: #292b2c;
+            font-weight: 900;
+            font-size: 12px;
+            font-family: PopB;
+            margin-bottom: 0;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+        ul{
+            padding: 15px 0 15px 15px;
+            list-style: circle !important;
+            list-style-type: circle !important;
+            li {
+                color: #666;
+                line-height: 26px;
+            }
+        }
+        .content-hidden{
+            display: none;
+        }
+        .text {
+            color: #666;
+            line-height: 20px;
+            padding-top: 19px;
+            padding-bottom: 16px;
+        }
+        .text2 {
+            color: #666;
+            line-height: 20px;
+            padding-bottom: 16px;
+        }
+        .text-content2 {
+            padding-bottom: 20px;
+            &:not(.show) {
+                background: -webkit-linear-gradient(top,#c3c3c3 0%,#efefef 100%);
+                    background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-transition: all 3s ease;
+                -moz-transition: all 3s ease;
+                -ms-transition: all 3s ease;
+                -o-transition: all 3s ease;
+                transition: all 3s ease;
+            }
+        }
+        .show-more{
+            color: $WebGrn;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-family: OxyB;
+            &::before{
+                content: "";
+            }
+        }
+    }
 }
 
 // .flashSale{

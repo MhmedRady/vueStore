@@ -25,11 +25,14 @@
             <!-- /** OUR BLOG **/ -->
             <Our-Blog />
              
-             <!-- /** UNDER 10 **/ -->
+            <!-- /** UNDER 10 **/ -->
              <Unde-10 />
 
-             <!-- /** MARKETPLACE & CONNECT **/ -->
+            <!-- /** MARKETPLACE & CONNECT **/ -->
              <Marketplace-Connect />
+
+            <!-- /** MARKETPLACE Text CONNECT **/ -->
+             <Marketplace-Text-Connect />
         </div>
     </div>
 </template>
@@ -46,6 +49,7 @@ import HomeAppliance from '@/components/Home/_Home_Apps'
 import OurBlog from '@/components/Home/_Our_Blog'
 import Unde10 from '@/components/Home/_Under_$10'
 import MarketplaceConnect from '@/components/Home/_Marketplace'
+import MarketplaceTextConnect from '@/components/Home/_Marketplace_Text'
 
 export default {
     components: {
@@ -58,7 +62,8 @@ export default {
         HomeAppliance,
         OurBlog,
         Unde10,
-        MarketplaceConnect
+        MarketplaceConnect,
+        MarketplaceTextConnect,
     }
 }
 </script>
