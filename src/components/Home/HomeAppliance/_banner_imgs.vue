@@ -1,6 +1,6 @@
 <template>
     <div class="category-banner row mt-2r">
-        <div v-for="bannerImg in BannerImgs" :key="bannerImg.id" class="col-md-4 mb-1r">
+        <div data-aos="zoom-in-right" data-aos-once="true" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" v-for="bannerImg in BannerImgs" :key="bannerImg.id" class="col-md-4 mb-1r">
             <div class="banner1">
                 <a href="#" class="img">
                     <img class="img-max image" :src="require(`../../../assets/images/Home/home-app/${bannerImg.img}`)" alt="">

@@ -16,7 +16,7 @@
                     >
                         <Product-card v-for="cardData in under10" :key="cardData.id" :cardData="cardData" :cropT="20" :class="'mr-5'"/>
                         
-                        <View-More :img="'Home/under-$10/banner-2.jpg'"/>
+                        <!-- <View-More :img="'Home/under-$10/banner-2.jpg'"/> -->
                     
                     </OwlCarousel>
                     
@@ -29,7 +29,7 @@
 <script>
 import jsonData from '../../../assets/models/Home/list-content/list-content.json'
 import ProductCard from '@/components/Home/_Product_Card';
-import ViewMore from '@/components/Home/_View_more';
+// import ViewMore from '@/components/Home/_View_more';
 
 export default {
     data() {
@@ -37,7 +37,7 @@ export default {
             listDataCard: jsonData,
         }
     },
-    components: {ProductCard,ViewMore},
+    components: {ProductCard},
     computed:{
         under10: function(){
             var items = this.listDataCard.filter(i=>Math.round(i.price)<=10);

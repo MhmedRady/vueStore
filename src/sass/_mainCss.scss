@@ -154,7 +154,7 @@
 //     }
 // }
 
-.vc_row{
+.vc_row,%_vc_row{
     transition: opacity 0.5s ease 0s;
 }
 
@@ -580,7 +580,7 @@
     background-size: cover;
 }
 .vc_custom{
-    background-color: $liBorder !important;
+    background-color: #f3f3f3 !important;
 }
 
 .vc_column-inner,

@@ -7,6 +7,7 @@
           :alt="atr"
         />
     </router-link>
+  
   </div>
 </template>
 

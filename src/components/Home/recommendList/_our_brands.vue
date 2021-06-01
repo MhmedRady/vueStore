@@ -40,8 +40,8 @@ export default {
 <style lang="scss" scoped>
     .our-brands{
         h2{
-            font-size: 18px;
-            color: #ffffff;
+            @include fontSize(20,px);
+            color: $f;
             text-align: $textAlign;
             @include f-F(PopB);
             font-weight: 700;

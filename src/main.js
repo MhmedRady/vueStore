@@ -1,5 +1,6 @@
 import Vue from "vue";
 import bodyContent from "./contents/bodyContent.vue";
+import footerContent from "./contents/footer.vue";
 import widgets from "./contents/Widgets.vue";
 import router from "./router";
 import store from "./store";
@@ -39,6 +40,12 @@ new Vue({
   },
   render: (h) => h(bodyContent),
 }).$mount("#body");
+
+new Vue({
+  router,
+  store,
+  render: (h) => h(footerContent),
+}).$mount("#mainFooter");
 
 new Vue({
   router,
