@@ -9,12 +9,15 @@
   $f: #FFF;
   $WB: #4449;
   $HeaderBar_Co: #105caa;
+  $listColor: #252934;
   $Grn: #42b983;
   $WebGrn: #49ad00;
   $HeaderBar_with_Op:#105caac7;
   $HeaderBottom_Co:rgba(0,0,0,.12);
 
   $liBorder: #e8e8e8;
+
+  $pp: #ff0054;
 
   $Orenge:#FFA800;
   $rate: #f7bc3d;
@@ -346,4 +349,76 @@
   left: 0;
   right: 0;
 }
+
+%Header-Fashion-top-link{
+  >a{
+    overflow: hidden !important;
+    color: $f !important;
+  
+    &::after{
+        content: "";
+        display: flex;
+        position: relative;
+        height: 5px;
+        bottom: 0;
+        left: 0;
+        // left: -150%;
+        background-color: $pp;
+        @include transform(translateX(-150%));
+        @include transition(.5,ease-out);
+  
+    }
+  }
+
+  &:hover{
+      >a{
+        color: $pp !important;
+        &::after{
+            @include transform(translateX(0));
+        }
+      }
+  }
+
+}
+
+@mixin Header-Content-Links(
+  $rColor:$listColor,
+  $after:$HeaderBar_with_Op,
+  $hColor: $listColor,
+  ){
+  // @for $var from 0 through 1 {
+    >a{
+      &.nav-link{
+        overflow: hidden;
+        color: $rColor;
+        &::after{
+            content: "";
+            display: flex;
+            position: relative;
+            height: 4px;
+            bottom: 29px;
+            left: 0;
+            // left: -150%;
+            z-index: 1;
+            background-color: #008BFF;
+            @include transform(translateX(-150%));
+            @include transition(.5,ease-out);
+        }
+      }
+    }
+    &:hover{
+      background-color: $f;
+      color: $hColor;
+
+        >a{
+          &.nav-link{
+            &::after{
+                @include transform(translateX(0));
+            }
+          }
+            
+        }
+    }
+  }
+
 /* ########## END PLACE HOLDERS ########## */

@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed-header">
+    <div class="fixed-header hidden-xl">
         <div class="container">
             <div class="row align-items-center pos-r">
                 <Logo />
@@ -11,9 +11,9 @@
                     <My-Cart/>
                 </div>
             </div>
-            <!-- <div class="all-cats-nav">
+            <div id="category-nav" class="all-category-nav">
                 <All-Categories />
-            </div> -->
+            </div>
         </div>
         
     </div>
@@ -23,23 +23,26 @@
 import helperFun from "@/layout/js/helper.js";
 import Logo from '@/components/Header/FixedHeader/_fixed_logo';
 import DesktopNavBar from "@/components/Header/HeaderBottom/_Desktop_navBar.vue";
-// import AllCategories from '@/components/Header/FixedHeader/_all_categories';
+import AllCategories from '@/components/Header/FixedHeader/_all_categories';
 import MyCart from '@/components/Header/HeaderTop/_MyCart.vue';
 
 export default {
     name: "fixedHeader",
     created(){
-        window.addEventListener("scroll",this.e)
+        window.addEventListener("scroll",this.e);
     },
     methods: {
         e: (e)=>{
             helperFun.scrollFun(e,"fixed-header","showFixed",270);
         },
     },
+    mounted() {
+        document.addEventListener("scroll",this.onScrolling);
+    },
     components:{
         Logo,
         DesktopNavBar,
-        // AllCategories,
+        AllCategories,
         MyCart
     }
 }
@@ -53,28 +56,16 @@ export default {
         top: 0;
         z-index: 1020;
         padding: 5px 0;
-        -webkit-box-shadow: 0 6px 5px rgba(0,0,0,.1);
-        -moz-box-shadow: 0 6px 5px rgba(0,0,0,.1);
-        -ms-box-shadow: 0 6px 5px rgba(0,0,0,.1);
-        -o-box-shadow: 0 6px 5px rgba(0,0,0,.1);
-        box-shadow: 0 6px 5px rgba(0,0,0,.1);
-        -webkit-transition: all 0.6s ease;
-        -moz-transition: all 0.6s ease;
-        -ms-transition: all 0.6s ease;
-        -o-transition: all 0.6s ease;
-        transition: all 0.6s ease;
-        -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        transform: translateY(-100%);
+        @include shadow(0 6px 5px rgba(0,0,0,.1));
+        @include transition(0.6, ease);
+        @include transform(translateY(-200%));
         display: block;
 
-        background-color: #fff !important;
+        background-color: $f !important;
         @media screen and(min-width: $maxIpad) {
             &.showFixed {
                 visibility: visible;
-                -webkit-transform: translateY(0);
-                -ms-transform: translateY(0);
-                transform: translateY(0);
+                @include transform(translateY(0));
             }
         }
         .container{
@@ -85,6 +76,13 @@ export default {
                     z-index: 1;
                 }
             }
+        }
+        .all-category-nav{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -38px;
+            z-index: -1;
         }
     }
 </style>

@@ -1,18 +1,33 @@
 <template>
-    <div class=".all-cats-nav">
-        <div class="cats-nav-content">
-            all Cats
+    <nav class="category-nav-content">
+        <div class="row">
+            <List-Content />
         </div>
-    </div>
+    </nav>
 </template>
 
+<script>
+import ListContent from '@/components/Header/FixedHeader/_list-content'
+
+export default {
+    components:{ListContent}
+}
+</script>
+
 <style lang="scss" scoped>
-    .cats-nav-content{
-        background: #E8EBEE;
-        position: absolute;
+    .category-nav-content{
+        background-color: #E8EBEE;
+        position: relative;
+        >div{
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        .columns {
             width: 100%;
-            left: 0;
-            bottom: -18px;
-            z-index: -1;
+            float: left;
+            padding-left: 1.0714285714rem;
+            padding-right: 1.0714285714rem;
+        }
+        
     }
 </style>

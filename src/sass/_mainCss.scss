@@ -13,6 +13,7 @@
         display: none;
     }
 }
+
 .d-ruby{
     display: ruby !important;
 }
@@ -531,11 +532,18 @@
       }
     }   
   }
+.hidden-xl{
+@media screen and(max-width:$mxIpad) {
+    display: none;
+}
+}
 .hidden-md{
     @media screen and(max-width:$ipad10Pro) {
         display: none;
     }
 }
+
+
 
 .custom_heading {
     margin-bottom: 0;
@@ -748,3 +756,4 @@
         }
     }    
 }
+

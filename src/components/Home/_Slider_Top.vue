@@ -11,16 +11,22 @@
         <div class="_slider_next col-sm-6 col-lg-6 col-xl-4 col-md-6 pl-0 mb-0 pl-lg-15 wpb_column column_container">
             <slider-Next-Img />
         </div>
+        <div class="container slider-down-links">
+            <slider-Down-Links />
+        </div>
     </div>
 </template>
 
 <script>
 import topCarousel from '@/components/Home/sliderTop/_Carousel.vue';
 import sliderNextImg from '@/components/Home/sliderTop/_slider_next_Imgs.vue';
+import sliderDownLinks from '@/components/Home/sliderTop/_slider_Down_Links.vue';
+
 export default {
     components: {
         topCarousel,
-        sliderNextImg
+        sliderNextImg,
+        sliderDownLinks
     }
 }
 </script>
