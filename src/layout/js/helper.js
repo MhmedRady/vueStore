@@ -93,6 +93,36 @@ var helperFun = {
         });
     },
 
+    reSize:function (){
+        var tag = document.querySelectorAll(".custom-container");
+        var w = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+
+            var Mobile = 767, ipad = 768, minIpad10Pro = 834, ipadPro = 1024, deskTop = 1200;
+            
+            for (let index = 0; index < tag.length; index++) {
+            
+                if(w <= Mobile){
+                    tag[index].style.width = `${w}px`;
+                    tag[index].style.left  = "0";
+                }else if(w <= ipad){
+                    tag[index].style.width = `${w}px`;
+                    tag[index].style.left  = "-24px";
+                }else if(w <= minIpad10Pro){
+                    tag[index].style.width = `${w}px`;
+                    tag[index].style.left  = "-55px";
+                }else if(w<= ipadPro){
+                    tag[index].style.width = `${w}px`;
+                    tag[index].style.left  = "-32px";
+                }else if(w >= deskTop){
+                    tag[index].style.width = `${w}px`;
+                    tag[index].style.left  = 0;
+                }
+            }
+        return w;
+    }
+
 }
 
 export default helperFun;

@@ -56,7 +56,7 @@
           color: #fff;
           width: 26px;
           height: 26px;
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.27);
           -webkit-border-radius: 3px;
           -moz-border-radius: 3px;
           -ms-border-radius: 3px;

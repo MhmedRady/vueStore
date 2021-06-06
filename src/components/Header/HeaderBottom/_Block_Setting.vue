@@ -31,7 +31,7 @@
             padding-right: 20px;
             color: #fff;
             line-height: 46px;
-            background-color: rgba(0,0,0,.2);
+            background-color: rgba(255, 255, 255, 0.09);
             text-align: center;
             text-transform: uppercase;
             -webkit-border-radius: 3px;

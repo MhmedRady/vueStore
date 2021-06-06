@@ -1,5 +1,5 @@
 <template>
-  <div class="topBar hidden-sm-down">
+  <div class="topBar hidden-sm-down mb-10">
     <div class="container">
       <div class="row">
         <Social />
@@ -26,10 +26,11 @@ export default {
   .container {
     width: 100%;
     max-width: 1800px;
-    background-color: $HeaderBar_Co;
   }
   @media screen and (max-width: $mobile) {
     display: none;
   }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: $blueBlack;
 }
 </style>

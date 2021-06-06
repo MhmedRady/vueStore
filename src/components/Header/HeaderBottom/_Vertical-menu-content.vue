@@ -419,6 +419,8 @@
         position: absolute;
         width: 270px;
         z-index: 999;
+        border: 2px solid $WebGrn;
+        border-top: none;
         @media screen and (min-width: $maxIpad) {
           position: absolute;
           width: 270px;

@@ -20,7 +20,7 @@ import AOS from 'aos'
 
 import './importPkgs.js'
 import './layout/js/filters'
-// import myTry from "./layout/js/helper.js";
+import Helper from "./layout/js/helper.js";
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
@@ -54,12 +54,18 @@ new Vue({
   created() {
     AOS.init()
   },
+  mounted() {
+    window.addEventListener('resize', Helper.reSize);
+  },
   render: (h) => h(bodyContent),
 }).$mount("#body");
 
 new Vue({
   router,
   store,
+  mounted() {
+    Helper.reSize()
+  },
   render: (h) => h(footerContent),
 }).$mount("#mainFooter");
 

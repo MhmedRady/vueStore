@@ -61,7 +61,7 @@ export default {
         @include transform(translateY(-200%));
         display: block;
 
-        background-color: $f !important;
+        background-color: $HeaderBar_Co !important;
         @media screen and(min-width: $maxIpad) {
             &.showFixed {
                 visibility: visible;

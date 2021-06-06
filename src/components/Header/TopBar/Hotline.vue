@@ -16,7 +16,7 @@
 
 <style lang="scss" scoped>
 %i {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.47);;
   font-size: 16px;
   padding-left: 0;
   padding-right: 9px;

@@ -68,6 +68,12 @@
 }
 
 /*** MARGIN & PADDING IN rem ***/
+.p-05r{
+    padding: .5rem;
+}
+.m-05r{
+    margin: .5rem;
+}
 @for $var from 0 through 5 {
 
     /*****  PADDING rem  *****/
@@ -109,22 +115,7 @@
 
 
 @media screen and(min-width:$minMobile_sm) and(max-width:$maxMobile_sm) {
-    [class*="_m-sm-auto"]{
-        margin: auto !important;
-    }
-    [class*="_mt-sm-auto"]{
-        margin-top: auto !important;
-    }
-    [class*="_mb-sm-auto"]{
-        margin-bottom: auto !important;
-    }
-    [class*="_mr-sm-auto"]{
-        margin-right: auto !important;
-    }
-    [class*="__ml-sm-auto"]{
-        margin-left: auto !important;
-    }
-
+    
     @for $var from 0 through 5 {
         [class*="m-sm-#{$var}"]{
             margin: $var+rem !important;
@@ -143,6 +134,27 @@
         }
     } 
 }
+@media screen and(max-width:$maxMobile_sm) {
+    
+    @for $var from 0 through 5 {
+        [class*="m-mob-#{$var}"]{
+            margin: $var+rem !important;
+        }
+        [class*="mt-mob-#{$var}"]{
+            margin-top: $var+rem !important;
+        }
+        [class*="mb-mob-#{$var}"]{
+            margin-bottom: $var+rem !important;
+        }
+        [class*="mr-mob-#{$var}"]{
+            margin-right: $var+rem !important;
+        }
+        [class*="ml-mob-#{$var}"]{
+            margin-left: $var+rem !important;
+        }
+    } 
+}
+
 .r-05r{
     right: .5rem;
 }
@@ -298,7 +310,7 @@
     border-color: #e9e9e9;
     padding-left: 20px;
     padding-right: 20px;
-    @include fontSize(.6);
+    @include fontSize;
 }
 .title_block span {
     @media screen and(max-width: $mxIpad){
@@ -543,8 +555,6 @@
     }
 }
 
-
-
 .custom_heading {
     margin-bottom: 0;
     &h2 {
@@ -706,54 +716,17 @@
 .f-bold{
     font-weight: bold !important;
 }
-
-.bloglist{
-    .post-time,
-    .post-comment{
-        padding: 8px 18px;
-        border-radius: 3px;
-        background-color: $WebGrn;
-        top: 10px;
-        left: 15px;
-        color: #000;
-        text-align: center;
-        box-shadow: $btnShadow;
-        .date{
-            font-weight: 700;
-            font-family: PopB;
-            font-size: .7rem;
-        }
-        .month,.icon{
-            position: relative;
-            margin-top: 3px;
-            padding-top: 7px;
-            padding-left: 0;
-            padding-right: 0;
-            font-size: .7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-family: Pop;
-            &::before{
-                content: "";
-                position: absolute;
-                width: 28px;
-                height: 2px;
-                background: rgba(255,255,255,.3);
-                top: 0;
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
-            }
-        }
-    }
-    .post-time{
-        background-color: $f;
-        .month{
-            &::before{
-                background: rgba(0,0,0,.3);
-            }
-        }
-    }    
+.back-e{
+    background-color: $liBorder !important;
 }
 
+.custom-container{
+    position: relative;
+}
+
+.back-footer{
+    background-color: $Footer_Co !important;
+}
+.back-no{
+    background: none !important;
+}

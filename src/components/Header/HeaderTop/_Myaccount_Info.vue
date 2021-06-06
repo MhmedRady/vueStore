@@ -138,6 +138,7 @@
 
 <style lang="scss" scoped>
 .myaccount_info {
+  
   position: relative;
   .my_account_tiile {
     width: 46px;
@@ -148,7 +149,7 @@
     margin-left: 15px;
     box-shadow: $btnShadow;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     &::after {
       display: none;
     }
@@ -176,6 +177,7 @@
     z-index: 100;
     height: auto;
     min-width: 255px !important;
+
     .account-list-content {
       padding: 10px 25px 27px;
       background: #fff;

@@ -1,5 +1,5 @@
 <template>
-    <div class="col-sm-2 wpb_column column_container">
+    <div :class="`col-sm-2 wpb_column column_container ${index%2!=0?'back-e':''}`">
         <div class="vc_column-inner">
             <div class="wpb_wrapper">
                 <div class="policy-item text-center pt-40 pb-30 pl-5 pr-5">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    props:["title","img","sub"]
+    props:["index","title","img","sub"]
 }
 </script>
 
@@ -34,6 +34,7 @@ export default {
                 flex: 0 0 100%;
             }
         }
+        
         .policy-icon {
             background: none;
             margin-bottom: 15px;

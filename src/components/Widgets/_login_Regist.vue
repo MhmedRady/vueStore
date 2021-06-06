@@ -130,7 +130,7 @@
             -ms-box-shadow: 0 0 20px rgba(0,0,0,.55);
             -o-box-shadow: 0 0 20px rgba(0,0,0,.55);
             box-shadow: 0 0 20px rgba(0,0,0,.55);
-            padding: 5px 15px 35px;
+            padding: 5px 15px 25px;
         }
         .modal-header button {
             background: none;
@@ -251,7 +251,11 @@
         {
             position: relative;
         }
- 
+        .form-control{
+            padding: 1.375rem 0.75rem;
+            @include fontSize(.75);
+            @include f-F;
+        }
         .forgot-password {
             @include fontSize();
             color: #bbb;

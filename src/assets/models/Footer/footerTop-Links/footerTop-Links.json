@@ -1,0 +1,32 @@
+[
+    {
+        "title": "CUSTOMER SERVICE",
+        "links": [
+            {"id":1,"link":"Contact us"},
+            {"id":2,"link":"refund policy"},
+            {"id":3,"link":"help and advice"},
+            {"id":4,"link":"shipping & returns"},
+            {"id":5,"link":"terms and conditions"}
+        ]
+    },
+    {
+        "title":"INFORMATION",
+        "links": [
+            {"id":6,"link":"about us"},
+            {"id":7,"link":"testtimonials"},
+            {"id":8,"link":"my account"},
+            {"id":9,"link":"payments & returns"},
+            {"id":10,"link":"view catelogues online"}
+        ]
+    },
+    {
+        "title":"about us",
+        "links": [
+            {"id":11,"link":"who we are ?"},
+            {"id":12,"link":"corporate responsibility"},
+            {"id":13,"link":"country laws"},
+            {"id":14,"link":"careers"},
+            {"id":15,"link":"privacy policy"}
+        ]
+    }
+]
