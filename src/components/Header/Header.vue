@@ -46,7 +46,7 @@ export default {
     }
   width: 100%;
   ._deskTop_header{
-    background-color: #162e4d;
+    background-color: #0f1f35;
     @extend %maxMobile;
   }
 }
