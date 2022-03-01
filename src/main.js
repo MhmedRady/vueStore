@@ -18,9 +18,10 @@ import VueSlickCarousel from 'vue-slick-carousel'
 
 import AOS from 'aos'
 
-import './importPkgs.js'
-import './layout/js/filters'
-import Helper from "./layout/js/helper.js";
+import './Helpers/importPkgs'
+import './Helpers/filters'
+import Helper from "@/Helpers/Helper.js";
+// import i18n from "./Helpers/i18n";
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
@@ -47,15 +48,17 @@ Vue.use(Lazyload, {
   attempt: 1
 })
 
+// Vue.use(i18n);
+
 new Vue({
   router,
   store,
-  
   created() {
     AOS.init()
   },
   mounted() {
     window.addEventListener('resize', Helper.reSize);
+    Helper.checkLang();
   },
   render: (h) => h(bodyContent),
 }).$mount("#body");

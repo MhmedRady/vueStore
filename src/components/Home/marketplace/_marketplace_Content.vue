@@ -88,7 +88,7 @@
 </template>
 
 <script>
-import helperFun from '../../../layout/js/helper'
+import helperFun from '@/Helpers/Helper.js'
     export default {
         
         mounted() {

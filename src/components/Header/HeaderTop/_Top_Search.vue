@@ -214,8 +214,10 @@ export default {
           border-radius: 0;
           text-align: $textAlign;
           margin-top: 0px;
+          max-height: 200px;
           overflow: hidden scroll;
           height: auto;
+          
           > li a {
             color: $WB;
             font-size: 12px;

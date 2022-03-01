@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import helperFun from "@/layout/js/helper.js";
+import helperFun from "../../Helpers/Helper.js";
 import Logo from '@/components/Header/FixedHeader/_fixed_logo';
 import DesktopNavBar from "@/components/Header/HeaderBottom/_Desktop_navBar.vue";
 import AllCategories from '@/components/Header/FixedHeader/_all_categories';

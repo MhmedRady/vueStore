@@ -10,7 +10,7 @@
 
 <script>
 import linkJson from '../../../assets/models/Home/homeAppliance/list-links.json'
-import helper from '../../../layout/js/helper'
+import helper from '@/Helpers/Helper.js'
 
 export default {
     data() {

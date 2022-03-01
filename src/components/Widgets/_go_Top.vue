@@ -7,7 +7,7 @@
 </template>
 <script>
 // import $ from 'jquery'
-import helperFun from '../../layout/js/helper'
+import helperFun from '@/Helpers/Helper.js'
 
 export default {
     name: "BackTop",

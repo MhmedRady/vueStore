@@ -121,7 +121,15 @@ var helperFun = {
                 }
             }
         return w;
-    }
+    },
+
+    checkLang(){
+        let lang = JSON.parse(localStorage.getItem('lang'));
+        if (lang == null) {
+            let newLang = new Object({lang:'en', name: "English"});
+                localStorage.setItem('lang',JSON.stringify(newLang));
+          }
+    },
 
 }
 

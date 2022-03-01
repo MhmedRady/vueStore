@@ -17,7 +17,7 @@
 
 <script>
 import ProductCardContent from '@/components/Home/productCard/_block_content_card';
-import helperFun from '../../layout/js/helper'
+import helperFun from '@/Helpers/Helper.js'
 
 export default {
     props: ["_id","cardClass","cardData","cropT"],

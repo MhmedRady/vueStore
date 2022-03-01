@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import helperFun from '../../../layout/js/helper'
+import helperFun from '@/Helpers/Helper.js'
 
 import ProductCard from '@/components/Home/_Product_Card';
 
